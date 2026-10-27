@@ -257,7 +257,7 @@ input.rng::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:
     <span class="eyebrow">Universe 2 &#183; Red Team &#183; Tue/Thu 11:00</span>
     <h1>War Room</h1>
     <p class="sub">Results through Period 7 &#183; planning Period 8 &#183; two regions &#183; MEGA dashboard updated Oct 15, 2026</p>
-    <div class="kpis"><span class="kpi"><span class="k">Profit rank</span><span class="v">#2</span></span><span class="kpi"><span class="k">Revenue rank</span><span class="v">#3</span></span><span class="kpi good"><span class="k">Retained earnings</span><span class="v">#1</span></span><span class="kpi good"><span class="k">P7 profit</span><span class="v">+$1,029</span></span><span class="kpi warn"><span class="k">Fix first</span><span class="v">Eco plant $4,673 &#8594; $0</span></span></div>
+    <div class="kpis"><span class="kpi"><span class="k">Profit rank</span><span class="v">#2</span></span><span class="kpi"><span class="k">Revenue rank</span><span class="v">#3</span></span><span class="kpi good"><span class="k">Retained earnings</span><span class="v">#1</span></span><span class="kpi good"><span class="k">P7 profit</span><span class="v">+$1,029</span></span><span class="kpi warn"><span class="k">P8 strategy</span><span class="v">Sell Low Cost &#183; all in Eco R1 + Family R2</span></span></div>
   </div>
 </div>
 
@@ -381,8 +381,8 @@ input.rng::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:
   <h2 class="sec">Our P8 plan</h2>
   <div class="verdict">
     <span class="label">Our P8 game plan</span>
-    <p class="big">Undo the two P7 slider cuts that cost us buyers (Family dealer proximity, Image models), sell the Eco stockpile, and use Region 2.</p>
-    <p><b>Before submitting:</b> MEGA currently has $4,673 in Eco facility investment and shows Region 1 cash at &#8722;$6,805. Our plan fixes both. See the P8 budget.</p>
+    <p class="big">New strategy: exit Low Cost in both regions, dominate Eco in Region 1 and Family in Region 2, and keep Image as the profit engine.</p>
+    <p><b>Before submitting:</b> set Eco facility investment from $4,673 to $0, turn on Sell Plant for Low Cost in both regions, and check that each region's cash available is $0 or more. See the P8 budget. Region 1 Family plant: sell next period (P9).</p>
     <p>Then use Region 2: it is profitable, cash-rich and growing fastest in Low Cost (+20% a period). Engineering sliders are shared across both regions, so set each car once and control volume with production numbers.</p>
   </div>
 
@@ -395,11 +395,11 @@ input.rng::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:
     <div class="card">
       <h3>Company-wide moves</h3>
       <ul class="clean">
-        <li><b class="ic">1</b><span><b>Zero out the $4,673 in Eco facility investment.</b> MEGA currently has it entered. It would grow the Eco plant from 150 to 219 for about 55 buyers, and it is why MEGA shows Region 1 cash at &#8722;$6,805.</span></li>
-        <li><b class="ic">2</b><span><b>Facility investment.</b> Region 1: Low Cost $306 (+10 cars), Image $1,427 (+5), Family $0, Eco $0. Region 2: Low Cost $899 (+31 cars for P9), Family $216 (keeps it the same size).</span></li>
-        <li><b class="ic">3</b><span><b>Move 10 Low Cost cars from Region 2 to Region 1.</b> They cost $22.90 delivered, less than our own $24.80. Enter 10 under Region 2 "Exported quantities". Only cars built this period can be exported.</span></li>
-        <li><b class="ic">4</b><span><b>Cash.</b> Region 1 needs an intercompany loan of $1,500 from Region 2 (instant, no interest), plus a $2,400 long-term loan. That keeps debt under 40% of equity, so the rate stays 2%, and the cash arrives in P9. Region 2 keeps about $8k.</span></li>
-        <li><b class="ic">5</b><span><b>Keep HR at $1,038 in Region 1 and $75 in Region 2.</b> Optional: a Region 2 dividend of up to $371, the only region allowed one. It helps share value but lowers retained earnings.</span></li>
+        <li><b class="ic">1</b><span><b>Sell both Low Cost plants (Corporate page, "Sell Plant").</b> Region 1: about $1,325 cash at the end of P8 and a $331 charge. Region 2: about $3,586 cash and an $897 charge. Each plant loses 25% of its capacity this period, so build what's allowed and sell out.</span></li>
+        <li><b class="ic">2</b><span><b>Eco facility investment: $4,673 &#8594; $0.</b> Our Eco plant (138 usable) is already the biggest in the game. Win Eco with design and marketing, not more capacity.</span></li>
+        <li><b class="ic">3</b><span><b>Region 2 Family: invest $2,901</b> to grow the plant from 86 to 150 for P9. The capacity arrives next period, so getting in early means buying it now.</span></li>
+        <li><b class="ic">4</b><span><b>Cash.</b> Region 1: an intercompany loan of $500 from Region 2 plus a $2,400 long-term loan (keeps the 2% rate). Region 2 keeps about $7,100. The $4,900 of plant-sale cash lands at the end of P8 for P9's push.</span></li>
+        <li><b class="ic">5</b><span><b>Protect morale.</b> Selling plants hurts morale in both regions. Keep Region 1 HR at $1,038 and raise Region 2 HR from $75 to $150. Never set Low Cost or Family sliders to 0; use production numbers.</span></li>
       </ul>
     </div>
     <div class="card">
@@ -644,7 +644,7 @@ $('#fc-moves').innerHTML=`<thead><tr><th>Team</th><th>Low Cost</th><th>Family</t
  <tr><td>${tn('Blue')}</td><td>Hold $39</td><td>Cut losses</td><td>Cut losses</td><td><b>Toward $145</b></td></tr>
  <tr><td>${tn('Yellow')}</td><td><b>Dump 68 cars</b></td><td>Hold $62</td><td><b>Design #1, $72</b></td><td>Push (192% design)</td></tr>
  <tr><td>${tn('Purple')}</td><td>Hold $39</td><td>Cut ads or sell plant</td><td>Keep (best seller)</td><td>Cut losses</td></tr>
- <tr class="us"><td>${tn('Red')} (us)</td><td>$43, build 67 + 10 from R2</td><td>$60, dealer marketing back</td><td>Build ~10, sell stock</td><td>$139, models back to 6</td></tr></tbody>`;
+ <tr class="us"><td>${tn('Red')} (us)</td><td>Sell both plants</td><td>Wind down R1, all in R2</td><td><b>All in: design + brand</b></td><td>$139, models back to 6</td></tr></tbody>`;
 const SC=[['Green would push Family harder','148 orders, sold 125','hit'],['Green would sell all its Image cars at $135+','$142, sold all 80','hit'],
  ['Blue would stay at $135+ in Image','$140, 118 orders','hit'],['Blue would raise Low Cost price or cut back','Held $39, sold 59','miss'],
  ['Purple would fire-sale Family','Held $60, spent $1,838 on ads instead','miss'],['Purple would grow Eco to about 71 cars','Sold 71','hit'],
@@ -654,16 +654,16 @@ $('#scorecard').innerHTML=`<thead><tr><th>Our P7 call</th><th style="text-align:
 
 // --------- plan tables ---------
 const PLANWHY={
- lc:['Hold $43','67 (full) + 10 from Region 2','$490 \u2192 ~$400','More buyers (~77) than our plant can build. Trim three cheap marketing sliders. Import 10 Region 2 cars at $22.90 each, cheaper than our own $24.80.'],
- fam:['$62 \u2192 $60','~56 (+22 in stock)','$644 \u2192 ~$970','Dealer Proximity back to 7 and After Sales back to 4, reversing the P7 cut that halved orders. Robustness 5 \u2192 7, Size 7 \u2192 8.'],
- eco:['Hold $67','~10 (+49 in stock)','~$520','Sell the stockpile. Cut Performance 5 \u2192 3 (worst for CO2 and cost). Do NOT put $4,673 into the Eco plant; it is already twice our market.'],
- img:['$128 \u2192 $139','101 (full)','$1,322 \u2192 ~$1,530','Put Number of Models back from 4 to 6. That P7 cut dropped design appeal from 191% to 106%. Even at $139 we expect more buyers than cars.']};
+ lc:['Hold $43','~50 (sale cuts capacity 25%)','$490 \u2192 ~$400','SELL THE PLANT this period (Sell Plant toggle on the Corporate page). Build what the plant allows and sell out. Facility investment $0. Never set the Low Cost sliders to 0.'],
+ fam:['$62 \u2192 $60','~26 (+22 in stock)','Hold $644','Wind down: sell out the 48 cars, then sell the plant in P9. Building 0 would still cost the full $1,365 fixed cost. Don\'t raise Region 1 Family marketing.'],
+ eco:['$67 \u2192 $65','~12 (+49 in stock)','$492 \u2192 ~$620','ALL IN ON DESIGN: Consumption 9, Novelty 6, Technology 8, Performance down to 3. After Sales 3, Brand 5. No new plant money: our 138 capacity is the largest in the game.'],
+ img:['$128 \u2192 $139','101 (full)','$1,322 \u2192 ~$1,530','Keep Image as our profit engine. Number of Models back to 6. Facility $1,427 (+5 cars).']};
 $('#plan-table').innerHTML=`<thead><tr><th>Market</th><th>Price</th><th>Production</th><th>Marketing</th><th style="text-align:left">Why</th></tr></thead><tbody>
 ${SEG.map(s=>{const w=PLANWHY[s.k];return `<tr><td><b>${s.name}</b></td><td>${w[0]}</td><td>${w[1]}</td><td>${w[2]}</td><td style="text-align:left;white-space:normal;min-width:260px">${w[3]}</td></tr>`}).join('')}</tbody>`;
 $('#plan-r2').innerHTML=`<thead><tr><th>Market</th><th>Price</th><th>Production</th><th>Marketing</th><th style="text-align:left">Why</th></tr></thead><tbody>
- <tr><td><b>Low Cost</b></td><td>Hold $34</td><td>~136 (+41 in stock)</td><td>Hold ~$504</td><td style="text-align:left;white-space:normal;min-width:260px">About 163 buyers here (market +20%), plus 10 exported to Region 1. Invest $899 in the plant (188 \u2192 219) to be ready for P9 growth.</td></tr>
- <tr><td><b>Family</b></td><td>Hold $60</td><td>~46 (+18 in stock)</td><td>$648 \u2192 ~$740</td><td style="text-align:left;white-space:normal;min-width:260px">Raise Dealer Proximity one step (4 \u2192 5). Family buyers follow dealer marketing. About 66 buyers.</td></tr>
- <tr><td><b>Eco / Image</b></td><td colspan="3">Not yet (no plants)</td><td style="text-align:left;white-space:normal;min-width:260px">Unknown cars in Region 2 need heavy marketing for several periods. Leave the Region 2 Eco and Image marketing sliders at 0.</td></tr></tbody>`;
+ <tr><td><b>Low Cost</b></td><td>Hold $34</td><td>~121 (sale cuts capacity 25%) + 41 in stock</td><td>$504 \u2192 ~$300</td><td style="text-align:left;white-space:normal;min-width:260px">SELL THE PLANT this period. Sell out the last 162 cars. Facility investment $0. Marketing can drop because we are leaving.</td></tr>
+ <tr><td><b>Family</b></td><td>$60 \u2192 $58</td><td>~62 (+18 in stock)</td><td>$648 \u2192 ~$960</td><td style="text-align:left;white-space:normal;min-width:260px">ALL IN: Region 2 Dealer Proximity 4 \u2192 7, After Sales 4 \u2192 5. Facility $2,901 grows the plant from 86 to 150 for P9. Aim for the biggest share in Region 2 (about 26% this period).</td></tr>
+ <tr><td><b>Eco / Image</b></td><td colspan="3">Not in Region 2</td><td style="text-align:left;white-space:normal;min-width:260px">Leave the Region 2 Eco and Image marketing sliders at 0.</td></tr></tbody>`;
 
 // \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 Decision sliders \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 const LV={VH:4,H:3,M:2,L:1,VL:.5};
@@ -691,32 +691,25 @@ const SL={
             'Cut to 2, closer to the market (1.6). Same reason.',
             'Cut to 1. Brand barely matters for Low Cost.']},
   base:{engApp:84,mktApp:170,price:43,market:340,share:20.6,growth:.10,elast:2.5,engSens:.3,mktSens:.2,
-        usable:67,prod:67,recProd:67,recPrice:43,inv:0,invValue:7,invRate:.5,fixed:1049,variable:9.0,ffr:4.6,dep:66,mkt:490,eng:7,quality:79,
+        usable:50,usableFull:67,prod:50,recProd:50,recPrice:43,saleCharge:331,saleProceeds:1325,inv:0,invValue:7,invRate:.5,fixed:1049,variable:9.0,ffr:4.6,dep:66,mkt:490,eng:7,quality:79,
         nfa:1656,capex:23.7,tpIn:22.9,p6:{sold:56,rev:2408,ebit:104},
         note:'With no slider changes this matches MEGA\'s P8 forecast (revenue $2,881, EBIT $533). Expected buyers (about 77) exceed what the plant can build (67), so cheaper marketing costs us nothing, and importing a few cars from Region 2 adds sales.'}},
  fam:{name:'Family',ready:true,
-  eng:{now:[5,4,6,5,7,5,4,4,3],mkt:[5.2,4.6,6.6,5.8,7.4,5,5.4,3.4,3.4],rec:[5,4,6,7,8,5,4,4,3],
+  eng:{now:[5,4,6,5,7,5,4,4,3],mkt:[5.2,4.6,6.6,5.8,7.4,5,5.4,3.4,3.4],rec:[5,4,6,5,7,5,4,4,3],
        app:[.8,.5,1.6,1.2,1.6,.8,1.2,.8,.6],
-       why:['Hold at 5, at the market level.',
-            'Hold at 4. Families don\'t buy for power.',
-            'Hold at 6.',
-            'Raise to 7 (it dropped to 5 in P7). Robustness is nearly free to build and signals a safe family car.',
-            'Raise to 8. Space is the point of a family car, and size is cheap.',
-            'Hold at 5, at the market level.',
-            'Hold at 4. Raising it is expensive to build.',
-            'Hold at 4. Families like choice.',
-            'Hold at 3, near the market level.']},
-  mktg:{now:[4,3,3,2],mkt:[6.6,2.4,3,3.4],rec:[7,3,4,2],app:[10,3,5,2],
-       why:['Put it back to 7. In P7 this was cut from 7 to 4 and marketing appeal fell from 101% to 60%. Family orders halved (95 \u2192 48). This is the single most important fix in P8.',
-            'Hold at 3.',
-            'Put it back to 4. Families value servicing near home.',
-            'Hold at 2. Family buyers "are not so sensitive to advertisement".']},
+       why:['Hold. We are selling this plant next period, so extra engineering will not pay back.',
+            'Hold.','Hold.','Hold. (If we were staying in Family, raising this to 7 would be cheap.)','Hold.','Hold.','Hold.',
+            'Hold. Never set Family sliders to 0: they also drive our Region 2 Family plant.',
+            'Hold.']},
+  mktg:{now:[4,3,3,2],mkt:[6.6,2.4,3,3.4],rec:[4,3,3,2],app:[10,3,5,2],
+       why:['Hold at 4. We are leaving Region 1 Family, so restoring dealer marketing would be wasted. (Region 2 Family marketing is set separately, and there we go big.)',
+            'Hold.','Hold.','Hold.']},
   base:{engApp:64,mktApp:60,price:62,market:425,share:11.3,growth:-.05,elast:1.3,engSens:.5,mktSens:1,
-        usable:136,prod:136,recProd:56,recPrice:60,inv:22,invValue:1045,invRate:1,fixed:1365,variable:20.1,ffr:1.6,dep:367,mkt:644,eng:90,quality:267,
+        usable:136,prod:136,recProd:26,recPrice:60,inv:22,invValue:1045,invRate:1,fixed:1365,variable:20.1,ffr:1.6,dep:367,mkt:644,eng:90,quality:267,
         nfa:6110,capex:41.8,p6:{sold:48,rev:2976,ebit:-678},
-        note:'MEGA\'s Family screen shows EBIT $3,236 only because its market-size box is 0, so it assumes all 158 cars sell. Last period we sold 48. Restoring dealer marketing is what wins buyers back: our P7 data says Family orders move almost one-for-one with marketing appeal.'}},
+        note:'Wind-down plan: sell the 22 in stock plus about 26 new cars, then sell this plant in P9. Building zero would not save money, because MEGA still charges the plant\'s full fixed cost ($1,365) as "non-operating results". MEGA\'s screen shows EBIT $3,236 only because its market-size box is 0.'}},
  eco:{name:'Eco-Friendly',ready:true,
-  eng:{now:[4,5,4,3,3,8,8,3,5],mkt:[3.8,4.2,4.2,4.6,2.8,7.2,7.6,3.2,4.8],rec:[4,3,4,3,3,8,8,3,5],
+  eng:{now:[4,5,4,3,3,8,8,3,5],mkt:[3.8,4.2,4.2,4.6,2.8,7.2,7.6,3.2,4.8],rec:[4,3,4,3,3,8,9,3,6],
        app:[.8,.3,.6,.5,.4,2,3,1,1.6],
        why:['Hold at 4.',
             'Cut from 5 to 3. Performance was raised in P7, but it is the worst slider for CO2, the costliest to build, and raises the failure rate. Eco buyers don\'t want power.',
@@ -724,13 +717,13 @@ const SL={
             'Hold at 3.',
             'Hold at 3. Smaller cars use less fuel.',
             'Hold at 8. Raising it is what lifted our design appeal from 56% to 102%.',
-            'Hold at 8. This is why people buy Eco cars.',
+            'Raise to 9, above the market (7.6). Fuel economy is the reason people buy Eco, and it is our biggest CO2 lever.',
             'Hold at 3.',
-            'Hold at 5, at the market level.']},
-  mktg:{now:[2,3,2,4],mkt:[2.4,2.8,2.6,3.4],rec:[2,3,3,4],app:[3,4,5,6],
-       why:['Hold at 2.','Hold at 3.','Raise to 3. We are below the market (2.6), and marketing appeal is only 76%.','Hold at 4.']},
-  base:{engApp:102,mktApp:76,price:67,market:265,share:18.1,growth:.15,elast:.7,engSens:.8,mktSens:.4,
-        usable:137,prod:137,recProd:10,recPrice:67,inv:49,invValue:1813,invRate:1,fixed:1624,variable:18.1,ffr:7.6,dep:683,mkt:492,eng:241,quality:340,
+            'Raise to 6, above the market (4.8). Eco is a young market where new models win buyers.']},
+  mktg:{now:[2,3,2,4],mkt:[2.4,2.8,2.6,3.4],rec:[2,3,3,5],app:[3,4,5,6],
+       why:['Hold at 2.','Hold at 3.','Raise to 3. We are below the market (2.6), and marketing appeal is only 76%.','Raise to 5. To lead Eco, buyers have to know our brand.']},
+  base:{engApp:102,mktApp:76,price:67,market:265,share:18.1,growth:.095,elast:.7,engSens:.8,mktSens:.4,
+        usable:137,prod:137,recProd:12,recPrice:65,inv:49,invValue:1813,invRate:1,fixed:1624,variable:18.1,ffr:7.6,dep:683,mkt:492,eng:241,quality:340,
         nfa:8537,capex:56.9,p6:{sold:48,rev:3216,ebit:88},
         note:'MEGA\'s Eco screen shows EBIT $4,474 only because it assumes all 186 cars sell. About 55 buyers are realistic. Eco will show a loss whatever we do: the $1,624 of fixed costs and $683 of depreciation come with the oversized plant. Building only about 15 keeps cash in hand and doesn\'t add to the 49 unsold.'}},
  img:{name:'Image',ready:true,
@@ -886,11 +879,11 @@ renderSliders();
 const R1CASH=19000, R1MAXLOAN=5146, R2CASH=16672;
 // Region 2 values from our P8 MEGA Region 2 screens. prev = [market size P7, share %, price, marketing $, engineering $]
 const R2U={
- lc:{name:'Low Cost',prev:[678,20,34,504,19],g:.20,el:2.2,ml:.03,usable:162,inv:41,invValue:950,fixed:1754,variable:7.1,ffr:8,dep:179,quality:42,invRate:.5,markup:2.9,nfa:4483,capex:23.8},
+ lc:{name:'Low Cost',prev:[678,20,34,504,19],g:.20,el:2.2,ml:.03,usable:121,usableFull:162,saleCharge:897,saleProceeds:3586,inv:41,invValue:950,fixed:1754,variable:7.1,ffr:8,dep:179,quality:42,invRate:.5,markup:2.9,nfa:4483,capex:23.8},
  fam:{name:'Family',prev:[297,19.9,60,648,53],g:.05,el:1.3,ml:.5,usable:70,inv:18,invValue:666,fixed:1239,variable:13.4,ffr:6,dep:216,quality:33,invRate:1,markup:4.8,nfa:3600,capex:41.9}};
 // Facility investment: maintaining a plant costs its depreciation. Capacity next period = (facility value - depreciation + investment) / capex per car.
-const P8REC={fac:{lc:306,fam:0,eco:0,img:1427},hr:1038,loan:2400,ic:1500,transfer:10,
- r2:{lc:[34,136,504,19,899],fam:[60,46,739,53,216],hr:75,div:0}};
+const P8REC={fac:{lc:0,fam:0,eco:0,img:1427},hr:1038,loan:2400,ic:500,transfer:0,sell:{r1lc:true,r2lc:true},
+ r2:{lc:[34,121,300,19,0],fam:[58,62,959,53,2901],hr:150,div:0}};
 let P8=JSON.parse(JSON.stringify(P8REC));
 const TP_LC=22.9; // Region 2 Low Cost delivered to Region 1: unit cost 19.0 + markup 2.9 + transport 1.1 (MEGA screen)
 Object.keys(SL).forEach(k=>{if(!slState[k]) slInit(k,'rec')});
@@ -910,6 +903,8 @@ function r2Calc(key,v,exportOut){
 }
 const inp=(id,val,w)=>`<input type="number" id="${id}" value="${val}" style="width:${w||80}px;text-align:right;font:600 15px var(--body);padding:4px 6px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg)">`;
 function p8Render(){
+  SL.lc.base.usable=P8.sell.r1lc?50:SL.lc.base.usableFull; R2U.lc.usable=P8.sell.r2lc?121:R2U.lc.usableFull;
+  slState.lc.prod=Math.min(slState.lc.prod,SL.lc.base.usable);
   slState.lc.imp=Math.max(0,+P8.transfer||0);
   const K=Object.keys(SL);
   const R1=K.map(k=>{const c=SL[k],s=slState[k],x=slModel(c,s),b=c.base,f=+P8.fac[k]||0;
@@ -918,7 +913,8 @@ function p8Render(){
   const used1=R1.reduce((a,r)=>a+r.cash,0), used2=R2.reduce((a,r)=>a+r.cash,0);
   const ic=+P8.ic||0, div2=+P8.r2.div||0, avail1=R1CASH+ic-used1-P8.hr, avail2=R2CASH-ic-used2-P8.r2.hr-div2;
   const q1=R1.reduce((a,r)=>a+r.s.quality,0);
-  const ebit1=R1.reduce((a,r)=>a+r.x.ebit,0)-(P8.hr-q1), ebit2=R2.reduce((a,r)=>a+r.ebit,0)-(P8.r2.hr-75);
+  const chg1=P8.sell.r1lc?SL.lc.base.saleCharge:0, chg2=P8.sell.r2lc?R2U.lc.saleCharge:0;
+  const ebit1=R1.reduce((a,r)=>a+r.x.ebit,0)-(P8.hr-q1)-chg1, ebit2=R2.reduce((a,r)=>a+r.ebit,0)-(P8.r2.hr-75)-chg2;
   const rev=R1.reduce((a,r)=>a+r.x.rev,0)+R2.reduce((a,r)=>a+r.rev,0);
   const lev=(CO.Red.debt+(+P8.loan||0))/(48000+CO.Red.are)*100, rate=lev<40?2:lev<60?4:lev<80?6:8;
   $('#p8-verdict').innerHTML=`<div class="grid4">
@@ -941,7 +937,7 @@ function p8Render(){
    <tr><td>Marketing <span class="muted" style="font-size:13px">(from sliders)</span></td>${cell(r=>fmt(r.x.mktCost))}<td>${fmt(tot(r=>r.x.mktCost))}</td></tr>
    <tr><td>Engineering <span class="muted" style="font-size:13px">(from sliders)</span></td>${cell(r=>fmt(r.x.engCost))}<td>${fmt(tot(r=>r.x.engCost))}</td></tr>
    <tr><td>Facility investment $</td>${cell(r=>inp('fac-'+r.k,r.f))}<td>${fmt(tot(r=>r.f))}</td></tr>
-   <tr><td>Plant capacity now \u2192 next period</td>${cell(r=>{const d=r.capNext-r.capNow;return `${r.capNow} \u2192 <b>${r.capNext}</b> <span class="delta" style="color:${d>0?'var(--good)':d<0?'var(--warn)':'var(--muted)'}">${d>0?'+':''}${d||'same'}</span>`})}<td></td></tr>
+   <tr><td>Plant capacity now \u2192 next period</td>${cell(r=>{if(r.k==='lc'&&P8.sell.r1lc) return '<span class="pill bad">Sold at end of P8</span>';const d=r.capNext-r.capNow;return `${r.capNow} \u2192 <b>${r.capNext}</b> <span class="delta" style="color:${d>0?'var(--good)':d<0?'var(--warn)':'var(--muted)'}">${d>0?'+':''}${d||'same'}</span>`})}<td></td></tr>
    <tr><td><b>Total cash used</b></td>${cell(r=>'<b>'+fmt(r.cash)+'</b>')}<td><b>${fmt(used1)}</b></td></tr></tbody>`;
   const c2=f=>R2.map(r=>`<td>${f(r)}</td>`).join(''), t2=f=>R2.reduce((a,r)=>a+f(r),0);
   $('#p8-r2').innerHTML=`<thead><tr><th>Region 2</th>${R2.map(r=>`<th>${r.name}</th>`).join('')}<th>Total</th></tr></thead><tbody>
@@ -957,9 +953,11 @@ function p8Render(){
    <tr><td>Left unsold / turned away</td>${c2(r=>(r.left>3?`<span class="pill warn">${r.left} unsold</span>`:r.left+' unsold')+(r.lost>1?` <span class="pill bad">${r.lost} turned away</span>`:''))}<td></td></tr>
    <tr><td><b>Sales revenue</b></td>${c2(r=>'<b>'+fmt(r.rev)+'</b>')}<td><b>${fmt(t2(r=>r.rev))}</b></td></tr>
    <tr><td><b>EBIT (estimate)</b></td>${c2(r=>`<b style="color:${col(r.ebit)}">${fmt(r.ebit)}</b>`)}<td><b>${fmt(t2(r=>r.ebit))}</b></td></tr>
-   <tr><td>Plant capacity now \u2192 next period</td>${c2(r=>{const d=r.capNext-r.capNow;return `${r.capNow} \u2192 <b>${r.capNext}</b> <span class="delta" style="color:${d>0?'var(--good)':d<0?'var(--warn)':'var(--muted)'}">${d>0?'+':''}${d||'same'}</span>`})}<td></td></tr>
+   <tr><td>Plant capacity now \u2192 next period</td>${c2(r=>{if(r.k==='lc'&&P8.sell.r2lc) return '<span class="pill bad">Sold at end of P8</span>';const d=r.capNext-r.capNow;return `${r.capNow} \u2192 <b>${r.capNext}</b> <span class="delta" style="color:${d>0?'var(--good)':d<0?'var(--warn)':'var(--muted)'}">${d>0?'+':''}${d||'same'}</span>`})}<td></td></tr>
    <tr><td><b>Total cash used</b></td>${c2(r=>'<b>'+fmt(r.cash)+'</b>')}<td><b>${fmt(used2)}</b></td></tr></tbody>`;
   $('#p8-cash1').innerHTML=`<table class="rtable"><tbody>
+    <tr><td><label><input type="checkbox" id="sell-r1lc" ${P8.sell.r1lc?'checked':''}> <b>Sell Low Cost plant</b></label></td><td>${P8.sell.r1lc?'Usable 67 \u2192 50':'Keep'}</td></tr>
+    ${P8.sell.r1lc?`<tr><td>Sale charge (20%, hits P8 profit)</td><td style="color:var(--bad)">\u2212${fmt(chg1)}</td></tr><tr><td>Sale proceeds (80%, arrive end of P8)</td><td style="color:var(--good)">+${fmt(SL.lc.base.saleProceeds)}</td></tr>`:''}
     <tr><td>Cash at start</td><td>${fmt(R1CASH)}</td></tr>
     <tr><td>Cash used by business units</td><td>\u2212${fmt(used1)}</td></tr>
     <tr><td>Dividend <span class="muted">(max $0)</span></td><td>$0</td></tr>
@@ -972,6 +970,8 @@ function p8Render(){
     <p class="muted" style="font-size:13px">Borrowing more than about $2,500 pushes debt past 40% of equity, which doubles the interest rate from 2% to 4% on all Region 1 debt. Imported cars are paid at the end of the period out of operating cash, so they don't use starting cash.</p>
     ${P8.hr<1038?'<p class="pill warn" style="white-space:normal">Cutting HR below last period hurts morale.</p>':''}`;
   $('#p8-cash2').innerHTML=`<table class="rtable"><tbody>
+    <tr><td><label><input type="checkbox" id="sell-r2lc" ${P8.sell.r2lc?'checked':''}> <b>Sell Low Cost plant</b></label></td><td>${P8.sell.r2lc?'Usable 162 \u2192 121':'Keep'}</td></tr>
+    ${P8.sell.r2lc?`<tr><td>Sale charge (20%, hits P8 profit)</td><td style="color:var(--bad)">\u2212${fmt(chg2)}</td></tr><tr><td>Sale proceeds (80%, arrive end of P8)</td><td style="color:var(--good)">+${fmt(R2U.lc.saleProceeds)}</td></tr>`:''}
     <tr><td>Cash at start</td><td>${fmt(R2CASH)}</td></tr>
     <tr><td>Cash used by business units</td><td>\u2212${fmt(used2)}</td></tr>
     <tr><td>Dividend <span class="muted">(max $371)</span></td><td>${inp('p8-div2',div2,100)}</td></tr>
@@ -984,6 +984,8 @@ function p8Render(){
   on('#p8-r1 input[id^="p1-"]',(el,v)=>{const [,key,f]=el.id.split('-');slState[key][f]=v;if(slKey===key) renderSliders()});
   on('#p8-r1 input[id^="fac-"]',(el,v)=>{P8.fac[el.id.slice(4)]=v});
   on('#p8-r2 input',(el,v)=>{const [,key,i]=el.id.split('-');P8.r2[key][+i]=v});
+  document.getElementById('sell-r1lc').addEventListener('change',e=>{P8.sell.r1lc=e.target.checked;if(!e.target.checked){slState.lc.prod=SL.lc.base.usableFull}p8Render();if(slKey==='lc')renderSliders()});
+  document.getElementById('sell-r2lc').addEventListener('change',e=>{P8.sell.r2lc=e.target.checked;if(!e.target.checked){P8.r2.lc[1]=R2U.lc.usableFull}p8Render()});
   [['p8-div2',v=>P8.r2.div=v],['p8-hr1',v=>P8.hr=v],['p8-hr2',v=>P8.r2.hr=v],['p8-ic',v=>P8.ic=v],['p8-loan',v=>P8.loan=v],['p8-tr',v=>P8.transfer=v]].forEach(([id,f])=>document.getElementById(id).addEventListener('change',e=>{f(+e.target.value||0);p8Render()}));
 }
 $('#p8-reset').addEventListener('click',()=>{P8=JSON.parse(JSON.stringify(P8REC));Object.keys(SL).forEach(k=>slInit(k,'rec'));renderSliders();p8Render()});
@@ -1010,7 +1012,7 @@ function dataBrief(){
   Object.entries(SL).forEach(([k,c])=>L.push(`Red ${c.name} sliders as of our P7 screens: engineering ${c.eng.now.join('/')} (market ${c.eng.mkt.join('/')}, our rec ${c.eng.rec.join('/')}); marketing ${c.mktg.now.join('/')} (market ${c.mktg.mkt.join('/')}, rec ${c.mktg.rec.join('/')}); price ${c.base.price}, usable capacity ${c.base.usable}, inventory ${c.base.inv}, fixed cost ${c.base.fixed}, variable cost/car ${c.base.variable}, capex/car ${c.base.capex}.`));
   L.push('Region 2 (Red, P7): revenue 8130, net profit 335, cash 16672, debt 6000. Low Cost sold 135 at $34 (unit cost 22.8, 42 unsold, P8 usable 162). Family sold 59 at $60 (unit cost 36.5, 18 unsold, P8 usable 71). All teams had identical Region 2 results in P7; P8 Region 2 usable capacity LC/Family: '+TEAMS.map(t=>t+' '+R2CAP[t].join('/')).join(', ')+'.');
   L.push('P7 review (our plan vs what we entered): '+REVIEW.map(r=>r[0]+': plan '+r[1]+'; entered '+r[2]+'; result '+r[3]).join(' | ').replace(/<[^>]+>/g,''));
-  L.push('Our P8 plan [price, build, marketing, engineering, facility]: '+JSON.stringify(P8REC));
+  L.push('Our P8 plan [price, build, marketing, engineering, facility]. STRATEGY: sell both Low Cost plants in P8, wind down and sell the Region 1 Family plant in P9, go all in on Eco in Region 1 and Family in Region 2, keep Image: '+JSON.stringify(P8REC));
   L.push('Professor video rules: forecast from the last 3 periods of units sold; each region has separate indices; the 9 engineering sliders are shared across regions; marketing sliders are separate per region; never set sliders to 0 to stop building (it zeroes both regions), use production on the budget; budget steps = market size, inventory, capacity, share needed; Eco/Image are unknown in Region 2 and need heavy marketing for several periods; do not ship big inventory to Region 2 expecting quick sales.');
   return L.join('\n');
 }
