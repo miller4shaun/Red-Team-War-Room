@@ -1146,6 +1146,7 @@ function renderDecision(){
    {id:'r1lc',t:'Region 1 \u00b7 Low Cost',tag:['warn','Sell out'],body:`
      <li class="sub">Engineering sliders (shared, $0 cost with no plant)</li>${eng('lc')}
      <li class="sub">Marketing sliders</li>${mkt('r1lc')}
+     ${kv('Plant','<span class="pill good">Already sold in P8</span> (nothing left to sell; Sell Plant stays as MEGA shows it)')}
      ${kv('Price','$39 (was $43)')}${kv('Production','0 (27 in stock)')}
      ${kv('Facility investment','$0')}`},
    {id:'r1fam',t:'Region 1 \u00b7 Family',tag:['plain','Import'],body:`
@@ -1177,6 +1178,7 @@ function renderDecision(){
    {id:'r2lc',t:'Region 2 \u00b7 Low Cost',tag:['warn','Sell out'],body:`
      ${kv('Engineering sliders','Shared with Region 1 (step 1)')}
      <li class="sub">Region 2 marketing sliders</li>${mkt('r2lc')}
+     ${kv('Plant','<span class="pill good">Already sold in P8</span> (nothing left to sell; Sell Plant stays as MEGA shows it)')}
      ${kv('Price','<span class="pill warn">$34 \u2192 $30</span>')}${kv('Production','0 (113 in stock)')}
      ${kv('Facility investment','$0')}`},
    {id:'r2fam',t:'Region 2 \u00b7 Family',tag:['good','Fill the plant'],body:`
