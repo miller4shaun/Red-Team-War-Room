@@ -88,19 +88,21 @@ This is our running tab: one entry per period covering what we decided and why, 
 ## P9: Own Eco, fill Family (planned, waiting for results)
 - **Did (plan):**
   - Eco at $69, build all 163, plant to 210.
-  - Region 2 Family: build 165 (60 shipped to Region 1). Consumption 4 → 6 and Dealer Proximity 7 → 8.
-  - Image Novelty 7 → 8, price held at $137.
-  - Low Cost sliders restored to sell the 141 cars at $39 (Region 1) and $30 (Region 2).
+  - Region 2 Family: build 175 (115 for Region 2, 60 shipped to Region 1). Consumption 4 → 6, Dealer Proximity 7 → 8, price $56.
+  - Region 1 Family: sell the 60 imported cars at $59.
+  - Image: Novelty 7 → 8, hold $137, build 80, no new capacity.
+  - Low Cost (both plants already sold in P8): sell the 141 leftover cars at $37 (Region 1) and $29 (Region 2), with sliders and dealer marketing back up.
   - Repay $4,000 of Region 1 debt.
 - **Why:**
-  - Only Purple is left in Eco, and our design lead is 112% vs 68%.
-  - Our Region 2 Family plant is twice the size of any rival's.
-  - Gas index 2.4 rewards fuel economy.
-  - Region 2 builds are 27% cheaper.
-  - Our Region 2 CO2 rank is last.
-- **Expected:**
-  - EBIT about +$5.9k in Region 1 and +$0.9k in Region 2.
-  - About 160 Eco cars sold.
-  - Low Cost cleared.
-- **What happened:** *(fill in after P9 results)*
+  - Eco buyers are flat at about 265, and only Purple is left. Buyers chose us 111 to 41 over Purple in P8.
+  - Region 2 Family buyers grew 13%, and rivals have only about 280 cars for about 355 buyers.
+  - Image now has about 540 cars for about 460 buyers. Low Cost is flooded: about 590 cars for 340 buyers in Region 1, and about 1,380 for 620 in Region 2.
+  - Gas index 2.4 rewards fuel economy. Region 2 builds are 27% cheaper. Our Region 2 CO2 rank is last.
+- **Predicted rivals:**
+  - Blue: Image toward $145.
+  - Green: opens Region 2 Image and grows Region 2 Family.
+  - Yellow: dumps stuck cars.
+  - Purple: Eco price cuts, and may sell plants.
+- **Expected:** EBIT about +$5.5k (Region 1) and +$0.8k (Region 2). Eco sells out, Low Cost is cleared, and we move from #3 toward #1 on total profit ($540 behind Green).
+- **What happened:** *(fill in after P9 results; score the rival predictions too)*
 - **Lesson:** *(fill in)*
