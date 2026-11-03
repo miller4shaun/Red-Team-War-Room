@@ -267,6 +267,13 @@ input.rng::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:
 .sl-chg{display:grid !important;grid-template-columns:minmax(0,1fr) 110px auto;gap:10px;align-items:center;width:100%;color:var(--fg) !important}
 .mini{position:relative;height:8px;border-radius:4px;background:var(--track)}
 .mini i{position:absolute;top:50%;width:14px;height:14px;border-radius:50%;transform:translate(-50%,-50%)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:middle}
+.fcbar{background:var(--soft);border-radius:6px;overflow:hidden}
+.fcb{display:block;padding:4px 8px;font-size:13px;font-weight:700;white-space:nowrap;border-radius:6px}
+.fcb.buy{background:var(--good-soft);color:var(--good)}
+.fcb.car{background:var(--warn-soft);color:var(--warn)}
+.fc9{display:grid;gap:8px}
+#archive details>summary{cursor:pointer;font-size:16px}
 .mini i.mkline{width:3px;height:18px;border-radius:1px;background:var(--warn);opacity:.8}
 .mini-key i.mkline{width:3px;height:14px;border-radius:1px;background:var(--warn)}
 .mini i.ghost{border:2px solid var(--muted);background:var(--surface)}
@@ -287,16 +294,12 @@ input.rng::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:
 
 <div class="navbar"><nav class="wrap tabs" aria-label="Sections">
   <a class="tab" href="#decision">Decision Day</a>
+  <a class="tab" href="#p9fc">P9 forecast</a>
+  <a class="tab" href="#rivals9">Rivals</a>
+  <a class="tab" href="#stand">Where we stand</a>
   <a class="tab" href="#log">Decision log</a>
-  <a class="tab" href="#overview">Where we stand</a>
-  <a class="tab" href="#review">P7 review</a>
-  <a class="tab" href="#rivals">Rivals</a>
-  <a class="tab" href="#markets">Markets</a>
-  <a class="tab" href="#forecast">P8 forecast</a>
-  <a class="tab" href="#plan">Our P8 plan</a>
-  <a class="tab" href="#sliders">Sliders</a>
-  <a class="tab" href="#planner">P8 budget</a>
   <a class="tab" href="#scout">Ask the Scout</a>
+  <a class="tab" href="#archive">Archive</a>
 </nav></div>
 
 <main class="wrap">
@@ -331,6 +334,7 @@ input.rng::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:
       <li class="no"><b class="ic">&#10005;</b><span><b>Don't hold back Eco production.</b> In P8 we had 111 Eco buyers but only 74 cars. Build all 163.</span></li>
       <li class="no"><b class="ic">&#10005;</b><span><b>Don't zero the Low Cost sliders yet.</b> We still have 141 cars to sell, and a zero slider makes them unsellable. With no plant, the sliders cost us nothing. Zero them in P10 once the cars are gone.</span></li>
       <li class="no"><b class="ic">&#10005;</b><span><b>Don't follow Purple into an Eco price war.</b> Our design lead (112% vs 68%) earns $69.</span></li>
+      <li class="no"><b class="ic">&#10005;</b><span><b>Don't add Image capacity.</b> About 540 Image cars for about 460 buyers. Keep 106 with $1,006 of upkeep.</span></li>
       <li class="no"><b class="ic">&#10005;</b><span><b>Don't add Region 2 Family facility money.</b> 221 cars of capacity is already the biggest in the game.</span></li>
       <li class="no"><b class="ic">&#10005;</b><span><b>Don't leave MEGA's market size and share boxes at 0.</b> MEGA then assumes we sell every car.</span></li>
       <li class="no"><b class="ic">&#10005;</b><span><b>Don't submit with cash available below $0</b> in either region.</span></li>
@@ -361,6 +365,107 @@ input.rng::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:
   </div>
 </section>
 
+<!-- ============ P9 FORECAST ============ -->
+<section class="panel" id="p9fc">
+  <div>
+    <span class="label" style="color:var(--accent)">Period 9 &#183; market forecast</span>
+    <h2 class="sec">P9 forecast: buyers vs. cars in every market</h2>
+    <p class="lead muted">Buyers are forecast from the last three periods' orders and the business index (1.11). Cars are every team's capacity plus unsold stock. <b>When cars beat buyers, prices fall.</b></p>
+  </div>
+  <div class="verdict">
+    <span class="label">The short version</span>
+    <p class="big">We are only in the two markets where buyers beat everyone else's cars.</p>
+    <p class="muted" style="margin:0">Eco (Region 1) and Family (Region 2) are ours to win. Image is getting crowded, so we defend it without adding cars. Low Cost is flooded in both regions, which confirms leaving it was right.</p>
+  </div>
+  <div class="grid2"><article class="card fc9">
+  <header style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h3 style="margin:0">Eco-Friendly &#183; Region 1</h3><span class="pill good">Ours to win</span></header>
+  <div class="fcbar"><span class="fcb buy" style="width:80%">265 buyers</span></div><div class="fcbar"><span class="fcb car" style="width:100%">330 cars</span></div>
+  <p class="muted" style="font-size:13px;margin:0">Buyers by period: 200 &#8594; 243 &#8594; 270 &#8594; 262 &#8594; 259 &#8594; <b>~265 (P9)</b>. Cars include all unsold stock. Red 164; Purple 151, Blue 13, Yellow 1, Green 1.</p>
+  <p style="margin:0">Buyers have been flat at about 260 for three periods: the +15% growth isn&#8217;t showing up. Blue, Yellow and Green sold their plants and have only stock left (15 cars). <b>It is Red vs Purple.</b> In P8, buyers picked us 111 to 41 over Purple.</p>
+  <p style="margin:0"><b style="color:var(--accent)">Our move:</b> $69, build 163 (sell out). Box: market 265, share 62%.</p>
+</article><article class="card fc9">
+  <header style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h3 style="margin:0">Family &#183; Region 2</h3><span class="pill good">Ours to win</span></header>
+  <div class="fcbar"><span class="fcb buy" style="width:71%">355 buyers</span></div><div class="fcbar"><span class="fcb car" style="width:100%">501 cars</span></div>
+  <p class="muted" style="font-size:13px;margin:0">Buyers by period: 295 &#8594; 334 &#8594; <b>~355 (P9)</b>. Cars include all unsold stock. Red 221; Green 115, Yellow 83, Blue 82.</p>
+  <p style="margin:0">Buyers grew 13% (295 &#8594; 334). Purple sold its plant, so its 64 buyers are up for grabs. <b>Rivals have only about 280 cars for about 355 buyers.</b> We have the only big plant.</p>
+  <p style="margin:0"><b style="color:var(--accent)">Our move:</b> $56, build 175 (115 here, 60 to Region 1). Box: market 355, share 32%.</p>
+</article><article class="card fc9">
+  <header style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h3 style="margin:0">Image &#183; Region 1</h3><span class="pill warn">Crowded</span></header>
+  <div class="fcbar"><span class="fcb buy" style="width:85%">460 buyers</span></div><div class="fcbar"><span class="fcb car" style="width:100%">541 cars</span></div>
+  <p class="muted" style="font-size:13px;margin:0">Buyers by period: 300 &#8594; 357 &#8594; 419 &#8594; 446 &#8594; 451 &#8594; <b>~460 (P9)</b>. Cars include all unsold stock. Red 97; Blue 160, Green 118, Yellow 90, Purple 76.</p>
+  <p style="margin:0">Buyers are still growing, but slowly (446 &#8594; 451). Cars now beat buyers by about 90. Blue has 160 cars to move, so expect Blue to cut toward $145. We have the lowest price ($137) and the lowest design appeal (159%).</p>
+  <p style="margin:0"><b style="color:var(--accent)">Our move:</b> Hold $137, build 80 (+11 stock). No new capacity.</p>
+</article><article class="card fc9">
+  <header style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h3 style="margin:0">Family &#183; Region 1</h3><span class="pill warn">Crowded</span></header>
+  <div class="fcbar"><span class="fcb buy" style="width:76%">375 buyers</span></div><div class="fcbar"><span class="fcb car" style="width:100%">494 cars</span></div>
+  <p class="muted" style="font-size:13px;margin:0">Buyers by period: 495 &#8594; 455 &#8594; 430 &#8594; 422 &#8594; 394 &#8594; <b>~375 (P9)</b>. Cars include all unsold stock. Red 60; Yellow 172, Green 150, Blue 111, Purple 1.</p>
+  <p style="margin:0">Buyers fall about 6% a period. Purple left, but Yellow has 54 cars of unsold stock to dump. Cars beat buyers by about 120.</p>
+  <p style="margin:0"><b style="color:var(--accent)">Our move:</b> Import only 60, at $59. Marketing up just one step.</p>
+</article><article class="card fc9">
+  <header style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h3 style="margin:0">Low Cost &#183; Region 1</h3><span class="pill bad">Flooded</span></header>
+  <div class="fcbar"><span class="fcb buy" style="width:58%">340 buyers</span></div><div class="fcbar"><span class="fcb car" style="width:100%">590 cars</span></div>
+  <p class="muted" style="font-size:13px;margin:0">Buyers by period: 245 &#8594; 257 &#8594; 303 &#8594; 337 &#8594; 324 &#8594; <b>~340 (P9)</b>. Cars include all unsold stock. Red 27; Yellow 174, Purple 156, Green 135, Blue 98.</p>
+  <p style="margin:0">Cars beat buyers by about 250 (Yellow has 80 stuck). Prices will fall to $34&#8211;$37, and buyers here chase price.</p>
+  <p style="margin:0"><b style="color:var(--accent)">Our move:</b> Sell our last 27 at $37. Never come back.</p>
+</article><article class="card fc9">
+  <header style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h3 style="margin:0">Low Cost &#183; Region 2</h3><span class="pill bad">Flooded</span></header>
+  <div class="fcbar"><span class="fcb buy" style="width:45%">620 buyers</span></div><div class="fcbar"><span class="fcb car" style="width:100%">1380 cars</span></div>
+  <p class="muted" style="font-size:13px;margin:0">Buyers by period: 675 &#8594; 580 &#8594; <b>~620 (P9)</b>. Cars include all unsold stock. Red 114; Purple 393, Yellow 361, Green 280, Blue 232.</p>
+  <p style="margin:0"><b>More than 2 cars for every buyer.</b> Purple (166) and Yellow (127) are stuck with cars too, and both need cash. Expect $28&#8211;$32.</p>
+  <p style="margin:0"><b style="color:var(--accent)">Our move:</b> Sell our 113 at $29. They cost us about $21 each.</p>
+</article></div>
+  <div class="card">
+    <h3>New markets to watch: Region 2 Eco and Image</h3>
+    <p style="margin:0">No one sold Eco or Image in Region 2 in P8. But Green has built 43 Image cars there, and Blue, Yellow, Green and Purple have all set Region 2 Image prices ($130&#8211;$150) and marketing. <b>Nobody is preparing Region 2 Eco.</b> If it opens, we would be first, and our engineering is shared across regions, so our 112% design carries over. <b>Ask the professor whether Region 2 Eco opens in P10.</b> If yes, we decide on a plant in P10.</p>
+  </div>
+</section>
+<!-- ============ P9 RIVALS ============ -->
+<section class="panel" id="rivals9">
+  <div>
+    <span class="label" style="color:var(--accent)">Period 9 &#183; scouting</span>
+    <h2 class="sec">Rivals: what each team will do next</h2>
+    <p class="lead muted">Predictions from every P4&#8211;P8 number plus your MEGA screens. Check them against the P9 results, and we&#8217;ll score them in the decision log.</p>
+  </div>
+  <div class="grid2"><article class="card">
+  <header style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h3 style="margin:0"><span class="dot" style="background:var(--t-blue)"></span> Blue</h3><span class="pill bad">Biggest threat</span></header>
+  <div class="predict"><span class="label">Where they are</span><p>The only team in profit in P8 (+$1,158 in Region 1). Biggest Image plant (159 cars, design 222%, $150). Region 2 Low Cost had 280 buyers but only 231 cars.</p></div>
+  <div class="predict"><span class="label">What they will probably do in P9</span><p>Push Image volume: about $145 and heavy marketing to fill 160 cars. Keep Region 2 Low Cost full. Likely to open Region 2 Image (price $150 and $828 marketing already set).</p></div>
+  <div class="predict"><span class="label">What it means for us</span><p>Image squeeze. We hold $137, raise Novelty to 8, and don&#8217;t add Image cars. Blue isn&#8217;t in Eco or big in Region 2 Family.</p></div>
+</article><article class="card">
+  <header style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h3 style="margin:0"><span class="dot" style="background:var(--t-green)"></span> Green</h3><span class="pill warn">Total-profit leader</span></header>
+  <div class="predict"><span class="label">Where they are</span><p>First on total profit so far (&#8722;$750). Lowest Family cost ($34.50) and the top seller in Region 1 Family (116). Biggest Region 2 investment: $17.9k of plant vs our $9.2k, with Region 2 Low Cost 279, Image 43 and Family 104 (up from 77).</p></div>
+  <div class="predict"><span class="label">What they will probably do in P9</span><p>Open Region 2 Image, keep growing Region 2 Low Cost, defend Region 1 Family. <b>Green is the only rival growing Region 2 Family.</b></p></div>
+  <div class="predict"><span class="label">What it means for us</span><p>Our Region 2 Family plant (221) is twice Green&#8217;s. Dealer Proximity 8 and $56 keep buyers coming to us.</p></div>
+</article><article class="card">
+  <header style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h3 style="margin:0"><span class="dot" style="background:var(--t-yellow)"></span> Yellow</h3><span class="pill plain">Stuck with cars</span></header>
+  <div class="predict"><span class="label">Where they are</span><p>Sold its Eco plant. Holding 80 unsold Low Cost cars in Region 1, 127 in Region 2 and 54 Family cars in Region 1. Image ran out of cars (104 buyers, 72 sold).</p></div>
+  <div class="predict"><span class="label">What they will probably do in P9</span><p>Dump stock at low prices (Low Cost about $33, Family about $58) and add Image capacity. May enter Region 2 Image at $130.</p></div>
+  <div class="predict"><span class="label">What it means for us</span><p>Its Family discounts hit our 60 imported cars, which is why we price them at $59 and ship only 60.</p></div>
+</article><article class="card">
+  <header style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><h3 style="margin:0"><span class="dot" style="background:var(--t-purple)"></span> Purple</h3><span class="pill bad">In trouble</span></header>
+  <div class="predict"><span class="label">Where they are</span><p>Lost $6.9k in P8 and $16.6k in total. Debt is 92% of equity, so it pays the top 8% rate. Our only Eco rival: 110 cars plus 41 in stock at a $37.90 cost. 166 Region 2 Low Cost cars stuck with $0 marketing.</p></div>
+  <div class="predict"><span class="label">What they will probably do in P9</span><p>Cut costs and prices to raise cash: Eco maybe $58&#8211;$62. It may sell more plants, <b>possibly Eco</b>.</p></div>
+  <div class="predict"><span class="label">What it means for us</span><p>We don&#8217;t follow on Eco price, because design (112% vs 68%) wins. If Purple sells its Eco plant, we own Eco outright in P10, and our 210 cars are ready.</p></div>
+</article></div>
+</section>
+<!-- ============ WHERE WE STAND (P8) ============ -->
+<section class="panel" id="stand">
+  <div>
+    <span class="label" style="color:var(--accent)">After Period 8</span>
+    <h2 class="sec">Where we stand: the race to win</h2>
+  </div>
+  <div class="verdict">
+    <span class="label">The short version</span>
+    <p class="big">We are #3 on total profit, just $540 behind Green, with the cleanest path to a big P9.</p>
+    <p class="muted" style="margin:0">P8 was the planned dip (#4 for the period) from selling three plants. If P9 lands near our +$6k forecast, we move to #1 on total profit. Blue is the team to watch.</p>
+  </div>
+  <div class="tbl"><table class="rtable">
+    <tr><th>Team (by total profit)</th><th>Total profit P4&#8211;P8</th><th>P8 profit</th><th>P8 revenue</th><th>Cash (both regions)</th><th>Debt</th><th>Region 1 debt &#247; equity</th></tr>
+    <tr><td><span class="dot" style="background:var(--t-green)"></span> Green</td><td>&#8722;$750</td><td>&#8722;$1,798</td><td>$29,720</td><td>$32,356</td><td>$21,224</td><td>39%</td></tr><tr><td><span class="dot" style="background:var(--t-blue)"></span> Blue</td><td>&#8722;$770</td><td>+$270</td><td>$31,920</td><td>$35,664</td><td>$20,478</td><td>37%</td></tr><tr class=hl><td><span class="dot" style="background:var(--t-red)"></span> Red</td><td>&#8722;$1,290</td><td>&#8722;$3,153</td><td>$27,114</td><td>$36,564</td><td>$19,020</td><td>35%</td></tr><tr><td><span class="dot" style="background:var(--t-yellow)"></span> Yellow</td><td>&#8722;$3,405</td><td>&#8722;$2,567</td><td>$23,586</td><td>$39,044</td><td>$20,740</td><td>39%</td></tr><tr><td><span class="dot" style="background:var(--t-purple)"></span> Purple</td><td>&#8722;$16,585</td><td>&#8722;$6,906</td><td>$22,741</td><td>$33,500</td><td>$27,294</td><td>92%</td></tr>
+  </table></div>
+  <p class="muted" style="font-size:13px">Profit is net profit, both regions combined. Debt &#247; equity sets the loan rate: under 40% pays 2%, 40&#8211;60% pays 4%, 60&#8211;80% pays 6%, and over 80% pays 8%.</p>
+</section>
+
 <!-- ============ DECISION LOG ============ -->
 <section class="panel" id="log">
   <div>
@@ -376,6 +481,30 @@ input.rng::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:
   <div class="grid2" id="log-cards" style="grid-template-columns:1fr"></div>
 </section>
 
+<!-- ============ SCOUT ============ -->
+<section class="panel" id="scout">
+  <div>
+    <h2>Ask the Scout</h2>
+    <p class="lead muted">An AI analyst that knows every Universe 2 number from P4 to P8 plus the game rules. On claude.ai it answers right here. Anywhere else, it builds a ready-made question to paste into Claude or ChatGPT. Paste new intel below and it will use that too.</p>
+  </div>
+  <div class="card">
+    <span class="label">Try one</span>
+    <div class="chips" id="scout-chips"></div>
+    <div class="field"><label for="scout-intel">Extra intel (optional)</label>
+      <textarea id="scout-intel" placeholder="Example: Green said they're adding Family capacity and keeping Image at $135."></textarea></div>
+    <form class="ask" id="scout-form">
+      <input id="scout-q" type="text" placeholder="Ask about a rival, a market, or our P9 decision&#8230;" aria-label="Your question">
+      <button class="btn" id="scout-go" type="submit">Ask</button>
+    </form>
+    <div class="answer" id="scout-out" aria-live="polite">Type a question or tap one above.</div>
+    <div><button class="btn ghost" id="scout-stop" type="button" hidden>Stop</button></div>
+  </div>
+</section>
+
+<!-- ============ ARCHIVE ============ -->
+<section class="panel" id="archive">
+  <details class="card"><summary><b>Archive: P7 review, P8 forecast, P8 plan, slider tool and P8 budget</b> <span class="muted">(last period's analysis, kept for the record and the final presentation)</span></summary>
+  <p class="muted" style="font-size:14px">These numbers are from P7 and P8. For this decision, use Decision Day, P9 forecast and Rivals above. The slider tool here is calibrated to the P8 screens.</p>
 <!-- ============ OVERVIEW ============ -->
 <section class="panel" id="overview">
   <h2 class="sec">Where we stand</h2>
@@ -560,31 +689,16 @@ input.rng::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:
   <div class="btnrow"><button class="btn ghost" id="p8-reset" type="button">Reset to our P8 plan</button></div>
 </section>
 
-<!-- ============ SCOUT ============ -->
-<section class="panel" id="scout">
-  <div>
-    <h2>Ask the Scout</h2>
-    <p class="lead muted">An AI analyst that knows every Universe 2 number from P4 to P6 plus the game rules. On claude.ai it answers right here. Anywhere else, it builds a ready-made question to paste into Claude or ChatGPT. Paste new intel below and it will use that too.</p>
-  </div>
-  <div class="card">
-    <span class="label">Try one</span>
-    <div class="chips" id="scout-chips"></div>
-    <div class="field"><label for="scout-intel">Extra intel (optional)</label>
-      <textarea id="scout-intel" placeholder="Example: Green said they're adding Family capacity and keeping Image at $135."></textarea></div>
-    <form class="ask" id="scout-form">
-      <input id="scout-q" type="text" placeholder="Ask about a rival, a market, or a P7 decision&#8230;" aria-label="Your question">
-      <button class="btn" id="scout-go" type="submit">Ask</button>
-    </form>
-    <div class="answer" id="scout-out" aria-live="polite">Type a question or tap one above.</div>
-    <div><button class="btn ghost" id="scout-stop" type="button" hidden>Stop</button></div>
-  </div>
+
+  </details>
 </section>
 
-<p class="foot">Built from MEGA-Dashboard-Tue-Thu-11-00-AM-Universe-2-P7 (both regions), our MEGA decision screens, the professor's "Explore More: Merger" video, and the MEGA pre-reading and cheat sheets. Forecasts are estimates. Confirm costs on MEGA's Budget page before submitting.</p>
+<p class="foot">Built from the MEGA dashboards P4&#8211;P8 (both regions, latest Universe-2-P8), our MEGA decision screens, the professor's "Explore More: Merger" video, and the MEGA pre-reading and cheat sheets. Forecasts are estimates. Confirm costs on MEGA's Budget page before submitting.</p>
 </main>
 
 <script>
 // --------- DATA: Universe 2. Company arrays are Region 1 [P4, P5, P6, P7] ---------
+const P9BRIEF="LATEST DATA (P8 results, planning P9). Per team, per region/segment: P8 orders, sold, price, unit cost, design appeal %, marketing $, capacity, unsold stock.\nR1 lowCost: Red ord 23 sold 23 $43 uc 28 eng 45% mkt $101 cap 0 stock 27; Blue ord 74 sold 74 $39 uc 26.9 eng 109% mkt $264 cap 85 stock 13; Yellow ord 48 sold 48 $36 uc 29.5 eng 24% mkt $226 cap 94 stock 80; Green ord 87 sold 83 $38 uc 24.6 eng 108% mkt $233 cap 134 stock 1; Purple ord 92 sold 83 $39 uc 27.7 eng 121% mkt $284 cap 155 stock 1\nR1 family: Red ord 50 sold 48 $60 uc 61.5 eng 64% mkt $644 cap 0 stock 0; Blue ord 105 sold 92 $58 uc 39.9 eng 99% mkt $1033 cap 111 stock 0; Yellow ord 33 sold 33 $62 uc 41.8 eng 85% mkt $322 cap 118 stock 54; Green ord 116 sold 116 $59 uc 34.5 eng 86% mkt $1137 cap 148 stock 2; Purple ord 90 sold 70 $60 uc 46.5 eng 57% mkt $1592 cap 0 stock 1\nR1 ecoFriendly: Red ord 111 sold 74 $62 uc 53.4 eng 112% mkt $724 cap 176 stock 1; Blue ord 0 sold 0 $60 uc 0 eng 0% mkt $0 cap 0 stock 13; Yellow ord 42 sold 40 $72 uc 49.8 eng 0% mkt $1083 cap 0 stock 1; Green ord 65 sold 24 $60 uc 68.9 eng 102% mkt $379 cap 0 stock 1; Purple ord 41 sold 41 $64 uc 37.9 eng 68% mkt $305 cap 110 stock 41\nR1 image: Red ord 91 sold 91 $137 uc 69.6 eng 159% mkt $1729 cap 106 stock 12; Blue ord 114 sold 104 $150 uc 75.4 eng 222% mkt $2132 cap 159 stock 1; Yellow ord 104 sold 72 $135 uc 75.1 eng 201% mkt $1901 cap 90 stock 0; Green ord 63 sold 63 $143 uc 79.9 eng 212% mkt $1312 cap 105 stock 13; Purple ord 79 sold 64 $140 uc 78.8 eng 222% mkt $1702 cap 75 stock 1\nR2 lowCost: Red ord 49 sold 49 $34 uc 21.4 eng 45% mkt $126 cap 0 stock 114; Blue ord 280 sold 156 $33 uc 21.9 eng 109% mkt $840 cap 231 stock 1; Yellow ord 78 sold 78 $34 uc 19.3 eng 24% mkt $294 cap 234 stock 127; Green ord 173 sold 163 $33 uc 22.7 eng 108% mkt $336 cap 279 stock 1; Purple ord 0 sold 0 $34 uc 0 eng 121% mkt $0 cap 227 stock 166\nR2 family: Red ord 78 sold 78 $58 uc 35.2 eng 64% mkt $944 cap 221 stock 2; Blue ord 50 sold 50 $59 uc 42.6 eng 99% mkt $486 cap 70 stock 12; Yellow ord 76 sold 76 $60 uc 36 eng 85% mkt $966 cap 77 stock 6; Green ord 66 sold 66 $59 uc 37.1 eng 86% mkt $716 cap 104 stock 11; Purple ord 64 sold 62 $60 uc 38.8 eng 57% mkt $966 cap 0 stock 0\nR2 image: Red ord 0 sold 0 $0 uc 0 eng 159% mkt $0 cap 0 stock 0; Blue ord 0 sold 0 $150 uc 0 eng 222% mkt $828 cap 0 stock 1; Yellow ord 0 sold 0 $130 uc 0 eng 201% mkt $1521 cap 0 stock 0; Green ord 0 sold 0 $140 uc 0 eng 212% mkt $1484 cap 43 stock 0; Purple ord 0 sold 0 $140 uc 0 eng 222% mkt $1865 cap 0 stock 0\nFinance after P8: Red total profit -1290, P8 profit -3153, cash 36564, debt 19020, R1 debt/equity 35%; Blue total profit -770, P8 profit 270, cash 35664, debt 20478, R1 debt/equity 37%; Yellow total profit -3405, P8 profit -2567, cash 39044, debt 20740, R1 debt/equity 39%; Green total profit -750, P8 profit -1798, cash 32356, debt 21224, R1 debt/equity 39%; Purple total profit -16585, P8 profit -6906, cash 33500, debt 27294, R1 debt/equity 92%\nP9 forecast (buyers vs all cars): Eco-Friendly \u00b7 Region 1 ~265 buyers vs 330 cars; Family \u00b7 Region 2 ~355 buyers vs 501 cars; Image \u00b7 Region 1 ~460 buyers vs 541 cars; Family \u00b7 Region 1 ~375 buyers vs 494 cars; Low Cost \u00b7 Region 1 ~340 buyers vs 590 cars; Low Cost \u00b7 Region 2 ~620 buyers vs 1380 cars\nRed P9 plan: Eco $69 build 163 facility $3,043 (210 for P10), mktg 3/4/4/5; Image $137 build 80 (+11 stock), Novelty 7->8, facility $1,006; R2 Family $56 build 175 (60 exported to R1), Family eng Comfort 7, Robustness 7, Size 8, Consumption 6, R2 proximity 8; R1 Family imports 60 at $59, proximity 5; Low Cost cars: R1 27 at $37, R2 113 at $29, sliders restored 2/1/4/9/7/2/6/3/2, R2 LC mktg 3/2/2/1; R1 HR $1,483, repay $4,000 R1 loan; R2 HR $597. Indices: gas 2.4, production cost R1 1.12 / R2 0.82, business 1.11/1.12. CO2 rank Red #1 R1, #5 R2.";
 const TEAMS=['Red','Blue','Yellow','Green','Purple'];
 const TC={Red:'var(--t-red)',Blue:'var(--t-blue)',Yellow:'var(--t-yellow)',Green:'var(--t-green)',Purple:'var(--t-purple)'};
 const CO={
@@ -1121,9 +1235,9 @@ function renderDecision(){
 
   $('#dd-moves').innerHTML=[
     ['Own Eco (R1)','Hold our design lead (112% vs Purple 68%). Price $62 \u2192 $69. Build all 163. Plant grows to 210 for P10.'],
-    ['Fill Family (R2)','Our plant (221) is the biggest. Build 165: 105 for Region 2 and 60 shipped to Region 1. Price $56.'],
-    ['Defend Image (R1)','Novelty 7 \u2192 8 to match the market. Hold $137, under Blue\'s $150. Build 85 plus 11 in stock.'],
-    ['Clear Low Cost','Sliders back up and dealer marketing up so the 141 stuck cars sell. $39 in R1, $30 in R2. Build 0.']]
+    ['Fill Family (R2)','Buyers grew 13% and rivals have only ~280 cars. Build 175: 115 for Region 2, 60 shipped to Region 1. Price $56.'],
+    ['Defend Image (R1)','Novelty 7 \u2192 8 to match the market. Hold $137. Build 80 plus 11 in stock: the market is getting crowded.'],
+    ['Clear Low Cost','Both markets are flooded, so price to move: $37 in R1, $29 in R2. Sliders and dealer marketing back up. Build 0.']]
     .map(([h,t])=>`<div class="tile"><span class="label">${h}</span><span class="note" style="color:var(--fg);font-size:15px">${t}</span></div>`).join('');
 
   $('#dd-p8').innerHTML=[
@@ -1136,63 +1250,63 @@ function renderDecision(){
     .map(([h,t])=>`<div class="predict"><span class="label">${h}</span><p>${t}</p></div>`).join('');
 
   $('#dd-why').innerHTML=[
-    ['Eco, Region 1','Blue, Yellow and Green all sold their Eco plants. <b>Only Purple is left</b>: 98 cars plus 41 in stock, design 68%, and debt at 92% of equity. About 270 buyers, and we can build 163. Purple may cut price to survive. We don\'t follow, because design wins Eco buyers.'],
-    ['Family, Region 2','Purple sold its Family plants. Blue and Yellow have about 63 cars each and Green 98. <b>We have 221.</b> Dealer Proximity 8 (market 6) keeps buyers coming to us.'],
-    ['Image, Region 1','This market is crowded now. Blue has 151 cars at $150, Green 97, Yellow 85 and Purple 70. We don\'t add capacity; we hold 106 and price under Blue.'],
-    ['What rivals will do in P9','<b>Blue:</b> push Image hard. <b>Green:</b> grow Region 2 Image (42 cars) and Low Cost. <b>Yellow:</b> dump 207 stuck Low Cost cars. <b>Purple:</b> cash crisis, so expect price cuts on Eco and on its 166 stuck Low Cost cars. Region 2 Low Cost is flooded, so price ours to move.']]
+    ['Eco, Region 1','Blue, Yellow and Green all sold their Eco plants. <b>Only Purple is left</b>: about 110 cars plus 41 in stock, design 68%, and debt at 92% of equity. About 265 buyers (flat for 3 periods). In P8, buyers chose us 111 to 41 over Purple. Purple may cut price to survive. We don\'t follow, because design wins Eco buyers.'],
+    ['Family, Region 2','Purple sold its Family plants. Blue has 82 cars, Yellow 83 and Green 115: <b>about 280 for about 355 buyers. We have 221.</b> Dealer Proximity 8 (market 6) keeps buyers coming to us.'],
+    ['Image, Region 1','This market is crowded now: about 540 cars for about 460 buyers. Blue has 160 cars to move at $150. We don\'t add capacity; we hold 106 and keep the lowest price.'],
+    ['What rivals will do in P9','<b>Blue:</b> Image toward $145 to fill 160 cars. <b>Green:</b> open Region 2 Image (43 cars), and it is the only rival growing Region 2 Family. <b>Yellow:</b> dump 261 stuck cars. <b>Purple:</b> cash crisis, so expect Eco price cuts and maybe more plant sales. Full detail is in the Rivals section.']]
     .map(([h,t])=>`<div class="predict"><span class="label">${h}</span><p>${t}</p></div>`).join('');
 
   const cards=[
    {id:'r1lc',t:'Region 1 \u00b7 Low Cost',tag:['warn','Sell out'],body:`
      <li class="sub">Engineering sliders (shared, $0 cost with no plant)</li>${eng('lc')}
      <li class="sub">Marketing sliders</li>${mkt('r1lc')}
-     ${kv('Plant','<span class="pill good">Already sold in P8</span> (nothing left to sell; Sell Plant stays as MEGA shows it)')}
-     ${kv('Price','$39 (was $43)')}${kv('Production','0 (27 in stock)')}
+     ${kv('Plant','<span class="pill good">Already sold in P8</span> (nothing left to sell)')}
+     ${kv('Price','<span class="pill warn">$43 \u2192 $37</span> (market flooded)')}${kv('Production','0 (27 in stock)')}
      ${kv('Facility investment','$0')}`},
    {id:'r1fam',t:'Region 1 \u00b7 Family',tag:['plain','Import'],body:`
      <li class="sub">Engineering sliders (they build the Region 2 cars)</li>${eng('fam')}
      <li class="sub">Marketing sliders</li>${mkt('r1fam')}
      ${kv('Imported cars','60 from Region 2')}
-     ${kv('Price','$60')}${kv('Production','0 (no plant)')}
+     ${kv('Price','$60 \u2192 $59')}${kv('Production','0 (no plant)')}
      ${kv('Facility investment','$0')}
      ${kv('If imports don\'t show','Set marketing to 0 (saves $644)')}`},
    {id:'r1eco',t:'Region 1 \u00b7 Eco-Friendly',tag:['good','Own it'],body:`
      <li class="sub">Engineering sliders</li>${eng('eco')}
      <li class="sub">Marketing sliders</li>${mkt('eco')}
      ${kv('Price','<span class="pill good">$62 \u2192 $69</span>')}${kv('Production','<b>163 (full plant)</b>')}
-     ${kv('Market size \u00b7 share','270 \u00b7 60%')}
+     ${kv('Market size \u00b7 share','265 \u00b7 62%')}
      ${kv('Facility investment','$3,043 (plant 210 for P10)')}`},
    {id:'r1img',t:'Region 1 \u00b7 Image',tag:['good','Defend'],body:`
      <li class="sub">Engineering sliders</li>${eng('img')}
      <li class="sub">Marketing sliders</li>${mkt('img')}
-     ${kv('Price','$137 (hold)')}${kv('Production','85 (+11 in stock)')}
-     ${kv('Market size \u00b7 share','475 \u00b7 19%')}
+     ${kv('Price','$137 (hold)')}${kv('Production','80 (+11 in stock = 91)')}
+     ${kv('Market size \u00b7 share','460 \u00b7 19%')}
      ${kv('Facility investment','<span class="pill warn">$2,252 \u2192 $1,006</span> (keeps 106)')}`},
    {id:'r1corp',t:'Region 1 \u00b7 Corporate',tag:['plain','Cash'],body:`
      ${kv('HR & Quality','$1,483 (keep)')}
      ${kv('Long-term loan','Repay $4,000 ($12,320 \u2192 $8,320)')}
      ${kv('New loans','$0')}
      ${kv('Dividend','$0')}
-     ${kv('Cash available after all of this','about $1.4k (must be $0 or more)')}
+     ${kv('Cash available after all of this','about $1.1k (must be $0 or more)')}
      ${kv('If cash is short','Repay less (it is the balancing number)')}`},
    {id:'r2lc',t:'Region 2 \u00b7 Low Cost',tag:['warn','Sell out'],body:`
      ${kv('Engineering sliders','Shared with Region 1 (step 1)')}
      <li class="sub">Region 2 marketing sliders</li>${mkt('r2lc')}
-     ${kv('Plant','<span class="pill good">Already sold in P8</span> (nothing left to sell; Sell Plant stays as MEGA shows it)')}
-     ${kv('Price','<span class="pill warn">$34 \u2192 $30</span>')}${kv('Production','0 (113 in stock)')}
+     ${kv('Plant','<span class="pill good">Already sold in P8</span> (nothing left to sell)')}
+     ${kv('Price','<span class="pill warn">$34 \u2192 $29</span> (2 cars per buyer)')}${kv('Production','0 (113 in stock)')}
      ${kv('Facility investment','$0')}`},
    {id:'r2fam',t:'Region 2 \u00b7 Family',tag:['good','Fill the plant'],body:`
      ${kv('Engineering sliders','Shared with Region 1 Family (step 2)')}
      <li class="sub">Region 2 marketing sliders</li>${mkt('r2fam')}
-     ${kv('Price','$58 \u2192 $56')}${kv('Production','165')}
+     ${kv('Price','$58 \u2192 $56')}${kv('Production','<span class="pill good">175</span> (115 here + 60 shipped)')}
      ${kv('Exported to Region 1','60')}
-     ${kv('Market size \u00b7 share','353 \u00b7 30%')}
+     ${kv('Market size \u00b7 share','355 \u00b7 32%')}
      ${kv('Facility investment','<span class="pill bad">$552 \u2192 $0</span>')}`},
    {id:'r2corp',t:'Region 2 \u00b7 Corporate',tag:['plain','Cash'],body:`
      ${kv('HR & Quality','$597 (keep)')}
      ${kv('New loans','$0')}
      ${kv('Dividend','$0 (retained earnings are negative)')}
-     ${kv('Cash available after all of this','about $3.3k (must be $0 or more)')}
+     ${kv('Cash available after all of this','about $2.5k (must be $0 or more)')}
      ${kv('Check','Capacity Next Period still about 221')}`}];
   let ticks={}; try{ticks=JSON.parse(localStorage.getItem('p9ticks')||'{}')}catch(e){}
   $('#dd-steps').innerHTML=cards.map((c,i)=>`<article class="card dd-card${ticks[c.id]?' done':''}" id="dd-${c.id}">
@@ -1204,14 +1318,15 @@ function renderDecision(){
   prog();
 
   $('#dd-result').innerHTML=[
-    ['EBIT, Region 1','+$5.9k','P8: \u2212$2.4k net, with sale charges'],
-    ['EBIT, Region 2','+$0.9k','P8: \u2212$0.8k net'],
-    ['Eco (R1)','~160 sold','60% share at $69. P8: 74 sold.'],
-    ['Image (R1)','~96 sold','Sells out at $137'],
-    ['Family (R2)','~105 sold','30% share, plus 60 shipped to R1'],
+    ['EBIT, Region 1','~+$5.5k','P8: \u2212$2.4k net, with sale charges'],
+    ['EBIT, Region 2','~+$0.8k','P8: \u2212$0.8k net'],
+    ['Eco (R1)','~163 sold','Sell out at $69. P8: 74 sold.'],
+    ['Image (R1)','~88 sold','At $137, in a crowded market'],
+    ['Family (R2)','~115 sold','32% share, plus 60 shipped to R1'],
     ['Low Cost','141 \u2192 ~0','Stuck cars cleared'],
     ['Region 1 debt','$8.3k','Down from $12.3k'],
-    ['Cash left','R1 ~$1.4k \u00b7 R2 ~$3.3k','Both at $0 or more']]
+    ['Cash left','R1 ~$1.1k \u00b7 R2 ~$2.5k','Both at $0 or more'],
+    ['Total profit rank','#3 \u2192 #1?','We are $540 behind Green']]
     .map(([l,v,n])=>`<div class="tile"><span class="label">${l}</span><span class="v" style="font-size:26px">${v}</span><span class="note">${n}</span></div>`).join('');
 }
 renderDecision();
@@ -1253,8 +1368,8 @@ const LOG=[
   bad:['Eco plant ran at 17%, losing 37 sales.','Low Cost sliders and marketing were cut while we still had cars to sell.','Family slider increases weren\'t entered, and Region 2 Family facility was $6,000 (plan: $552).'],
   lesson:'Keep supporting a line until its last car is sold. When we lead a market, build to full capacity.'},
  {p:'P9',title:'Own Eco, fill Family',status:['plain','Planned'],
-  did:'Eco $69, build all 163, plant to 210. Region 2 Family: 165 built, 60 shipped to Region 1, Consumption 4 \u2192 6. Image Novelty 7 \u2192 8, $137. Low Cost sliders restored to sell 141 cars at $39 and $30. Repay $4,000 of debt.',
-  why:'Only Purple is left in Eco. Our Region 2 Family plant is 2\u00d7 any rival. High gas prices reward fuel economy.',
+  did:'Eco $69, build all 163, plant to 210. Region 2 Family: 175 built, 60 shipped to Region 1, Consumption 4 \u2192 6. Image Novelty 7 \u2192 8, $137, build 80. Low Cost sliders restored to sell 141 cars at $37 and $29. Repay $4,000 of debt.',
+  why:'Only Purple is left in Eco. Region 2 Family buyers beat rivals\' cars and our plant is 2\u00d7 any rival. Image and Low Cost are crowded. High gas prices reward fuel economy.',
   happened:'Waiting for results.',
   good:[],bad:[],
   lesson:'Fill this in after the P9 results.'}];
@@ -1281,10 +1396,7 @@ function renderLog(){
 renderLog();
 
 // \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 Ask the Scout (Claude) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
-const CHIPS=['What is Green most likely to do in P8, and how do we catch them?','Give me a 5-bullet briefing for our team meeting.','What did we get wrong in P7 and what should we change?',
- 'Purple sold just 14 Family cars, has 95 in inventory, and is building the biggest Family plant in the universe. What would have to be true for that plant to pay off?',
- 'Green and Blue have the top Image engineering and the same $135 price, yet Blue sold 87 and Green 53. What else is different?',
- 'Red raised HR & Quality from 150 to 1,040, and Green cut it from 1,500 to 296. Both swung to a profit. Can both be right?','Should we enter Eco or Image in Region 2, and when?','How do we get our Family buyers back after cutting marketing?'];
+const CHIPS=["What will Purple do with its Eco plant in P9, and how should we respond?", "Give me a 5-bullet briefing on our P9 decision for the team meeting.", "Blue has 160 Image cars for a crowded market. What price will Blue set, and should we move ours?", "Should we build a Region 2 Eco plant if that market opens in P10?", "What could go wrong with our P9 plan, and what is our backup?", "How many Region 2 Family cars should we build if Green grows its plant again?"];
 $('#scout-chips').innerHTML=CHIPS.map(c=>`<button type="button" class="chip">${esc(c)}</button>`).join('');
 const RULES=`MEGA "Customer Value Challenge" car simulation. 5 teams (Red, Blue, Yellow, Green, Purple) in Universe 2. We are RED. Now deciding Period 9. In P8 Red sold both Low Cost plants and the Region 1 Family plant; Red now runs Region 1 Eco (plant 164, growing to 210) and Image (106), and Region 2 Family (plant 221). Red still has 141 unsold Low Cost cars (27 R1, 114 R2). Blue, Yellow and Green sold their Eco plants, so Region 1 Eco is Red vs Purple (98 cars, design 68%, debt 92% of equity). P8 Eco: 111 orders but only 74 sold (plant at 17%). Indices: gas 2.4 both regions; production cost R1 1.12, R2 0.82. Red CO2 rank: #1 in R1, #5 in R2. (Older notes below describe P8.) The merger is done: Red runs Region 1 (all 4 car lines) and Region 2 (Low Cost and Family plants only).
 Segments: Low Cost (price sensitivity HIGH, marketing LOW, engineering LOW, ability to deliver HIGH; growth +10%/period), Family (all MEDIUM; dealer proximity matters; growth -5%), Eco-Friendly (price LOW, marketing MEDIUM, engineering HIGH, deliver LOW; growth +15%), Image (price V.LOW, marketing HIGH, engineering V.HIGH, deliver LOW; growth +5%).
@@ -1294,7 +1406,7 @@ Loans: max 5x previous net profit or $2000, cash arrives next period, interest b
 Winning criteria: sales revenue, ROCE, retained earnings, employee morale, share value, low CO2.
 Region 2 facts: R2 starts with Low Cost & Family; R2 growth LC +20%, Family +5%, Eco +5%, Image +15%; R2 production cost 75% of R1; product transfers at cost + markup (15/15/20/25%) + 5% transport.`;
 function dataBrief(){
-  const L=['Region 1 company (P4, P5, P6, P7):'];
+  const L=[P9BRIEF,'OLDER HISTORY. Region 1 company (P4, P5, P6, P7):'];
   TEAMS.forEach(t=>{const c=CO[t];L.push(`${t}: revenue ${c.rev}, net profit ${c.np}, HR ${c.hr}, marketing ${c.mkt}, engineering ${c.eng}; now cash ${c.cash}, debt ${c.debt}, retained earnings ${c.are}, P7 plants: ${c.plant}, failure rates ${c.ffr}`)});
   L.push('Region 1 segments per team: soldP6, soldP7, ordersP6, ordersP7, priceP6, priceP7, marketing$P7, design appeal % of P4 (P7), (unused), unsold inventory, usable capacity P8, segment EBIT P7, unit cost P7, engineering$P7.');
   SEG.forEach(s=>{L.push(`${s.name} (growth ${Math.round(s.g*100)}%/period):`);TEAMS.forEach(t=>L.push(`  ${t}: ${s.d[t].join(', ')}`))});
