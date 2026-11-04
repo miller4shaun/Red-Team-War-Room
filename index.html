@@ -412,11 +412,11 @@ input.rng::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:
   <div class="fcbar"><span class="fcb buy" style="width:45%">620 buyers</span></div><div class="fcbar"><span class="fcb car" style="width:100%">1380 cars</span></div>
   <p class="muted" style="font-size:13px;margin:0">Buyers by period: 675 &#8594; 580 &#8594; <b>~620 (P9)</b>. Cars include all unsold stock. Red 114; Purple 393, Yellow 361, Green 280, Blue 232.</p>
   <p style="margin:0"><b>More than 2 cars for every buyer.</b> Purple (166) and Yellow (127) are stuck with cars too, and both need cash. Expect $28&#8211;$32.</p>
-  <p style="margin:0"><b style="color:var(--accent)">Our move:</b> Sell our 113 at $29. They cost us about $21 each.</p>
+  <p style="margin:0"><b style="color:var(--accent)">Our move:</b> Sell our 113 at $28 with Dealer Proximity 4. They cost us about $21 each, so each sale still makes money.</p>
 </article></div>
   <div class="card">
-    <h3>New markets to watch: Region 2 Eco and Image</h3>
-    <p style="margin:0">No one sold Eco or Image in Region 2 in P8. But Green has built 43 Image cars there, and Blue, Yellow, Green and Purple have all set Region 2 Image prices ($130&#8211;$150) and marketing. <b>Nobody is preparing Region 2 Eco.</b> If it opens, we would be first, and our engineering is shared across regions, so our 112% design carries over. <b>Ask the professor whether Region 2 Eco opens in P10.</b> If yes, we decide on a plant in P10.</p>
+    <h3>Region 2 Eco and Image: not for us</h3>
+    <p style="margin:0">Opening a market in Region 2 means investing in a brand-new facility. We are not doing that: our cash goes to owning Eco in Region 1 and filling the Family plant in Region 2. Green has already built 43 Image cars there, and the others have set Region 2 Image prices. That pulls their money and attention away from <b>our</b> two markets, which helps us.</p>
   </div>
 </section>
 <!-- ============ P9 RIVALS ============ -->
@@ -698,7 +698,7 @@ input.rng::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:
 
 <script>
 // --------- DATA: Universe 2. Company arrays are Region 1 [P4, P5, P6, P7] ---------
-const P9BRIEF="LATEST DATA (P8 results, planning P9). Per team, per region/segment: P8 orders, sold, price, unit cost, design appeal %, marketing $, capacity, unsold stock.\nR1 lowCost: Red ord 23 sold 23 $43 uc 28 eng 45% mkt $101 cap 0 stock 27; Blue ord 74 sold 74 $39 uc 26.9 eng 109% mkt $264 cap 85 stock 13; Yellow ord 48 sold 48 $36 uc 29.5 eng 24% mkt $226 cap 94 stock 80; Green ord 87 sold 83 $38 uc 24.6 eng 108% mkt $233 cap 134 stock 1; Purple ord 92 sold 83 $39 uc 27.7 eng 121% mkt $284 cap 155 stock 1\nR1 family: Red ord 50 sold 48 $60 uc 61.5 eng 64% mkt $644 cap 0 stock 0; Blue ord 105 sold 92 $58 uc 39.9 eng 99% mkt $1033 cap 111 stock 0; Yellow ord 33 sold 33 $62 uc 41.8 eng 85% mkt $322 cap 118 stock 54; Green ord 116 sold 116 $59 uc 34.5 eng 86% mkt $1137 cap 148 stock 2; Purple ord 90 sold 70 $60 uc 46.5 eng 57% mkt $1592 cap 0 stock 1\nR1 ecoFriendly: Red ord 111 sold 74 $62 uc 53.4 eng 112% mkt $724 cap 176 stock 1; Blue ord 0 sold 0 $60 uc 0 eng 0% mkt $0 cap 0 stock 13; Yellow ord 42 sold 40 $72 uc 49.8 eng 0% mkt $1083 cap 0 stock 1; Green ord 65 sold 24 $60 uc 68.9 eng 102% mkt $379 cap 0 stock 1; Purple ord 41 sold 41 $64 uc 37.9 eng 68% mkt $305 cap 110 stock 41\nR1 image: Red ord 91 sold 91 $137 uc 69.6 eng 159% mkt $1729 cap 106 stock 12; Blue ord 114 sold 104 $150 uc 75.4 eng 222% mkt $2132 cap 159 stock 1; Yellow ord 104 sold 72 $135 uc 75.1 eng 201% mkt $1901 cap 90 stock 0; Green ord 63 sold 63 $143 uc 79.9 eng 212% mkt $1312 cap 105 stock 13; Purple ord 79 sold 64 $140 uc 78.8 eng 222% mkt $1702 cap 75 stock 1\nR2 lowCost: Red ord 49 sold 49 $34 uc 21.4 eng 45% mkt $126 cap 0 stock 114; Blue ord 280 sold 156 $33 uc 21.9 eng 109% mkt $840 cap 231 stock 1; Yellow ord 78 sold 78 $34 uc 19.3 eng 24% mkt $294 cap 234 stock 127; Green ord 173 sold 163 $33 uc 22.7 eng 108% mkt $336 cap 279 stock 1; Purple ord 0 sold 0 $34 uc 0 eng 121% mkt $0 cap 227 stock 166\nR2 family: Red ord 78 sold 78 $58 uc 35.2 eng 64% mkt $944 cap 221 stock 2; Blue ord 50 sold 50 $59 uc 42.6 eng 99% mkt $486 cap 70 stock 12; Yellow ord 76 sold 76 $60 uc 36 eng 85% mkt $966 cap 77 stock 6; Green ord 66 sold 66 $59 uc 37.1 eng 86% mkt $716 cap 104 stock 11; Purple ord 64 sold 62 $60 uc 38.8 eng 57% mkt $966 cap 0 stock 0\nR2 image: Red ord 0 sold 0 $0 uc 0 eng 159% mkt $0 cap 0 stock 0; Blue ord 0 sold 0 $150 uc 0 eng 222% mkt $828 cap 0 stock 1; Yellow ord 0 sold 0 $130 uc 0 eng 201% mkt $1521 cap 0 stock 0; Green ord 0 sold 0 $140 uc 0 eng 212% mkt $1484 cap 43 stock 0; Purple ord 0 sold 0 $140 uc 0 eng 222% mkt $1865 cap 0 stock 0\nFinance after P8: Red total profit -1290, P8 profit -3153, cash 36564, debt 19020, R1 debt/equity 35%; Blue total profit -770, P8 profit 270, cash 35664, debt 20478, R1 debt/equity 37%; Yellow total profit -3405, P8 profit -2567, cash 39044, debt 20740, R1 debt/equity 39%; Green total profit -750, P8 profit -1798, cash 32356, debt 21224, R1 debt/equity 39%; Purple total profit -16585, P8 profit -6906, cash 33500, debt 27294, R1 debt/equity 92%\nP9 forecast (buyers vs all cars): Eco-Friendly \u00b7 Region 1 ~265 buyers vs 330 cars; Family \u00b7 Region 2 ~355 buyers vs 501 cars; Image \u00b7 Region 1 ~460 buyers vs 541 cars; Family \u00b7 Region 1 ~375 buyers vs 494 cars; Low Cost \u00b7 Region 1 ~340 buyers vs 590 cars; Low Cost \u00b7 Region 2 ~620 buyers vs 1380 cars\nRed P9 plan: Eco $69 build 163 facility $3,043 (210 for P10), mktg 3/4/4/5; Image $137 build 80 (+11 stock), Novelty 7->8, facility $1,006; R2 Family $56 build 175 (60 exported to R1), Family eng Comfort 7, Robustness 7, Size 8, Consumption 6, R2 proximity 8; R1 Family imports 60 at $59, proximity 5; Low Cost cars: R1 27 at $37, R2 113 at $29, sliders restored 2/1/4/9/7/2/6/3/2, R2 LC mktg 3/2/2/1; R1 HR $1,483, repay $4,000 R1 loan; R2 HR $597. Indices: gas 2.4, production cost R1 1.12 / R2 0.82, business 1.11/1.12. CO2 rank Red #1 R1, #5 R2.";
+const P9BRIEF="LATEST DATA (P8 results, planning P9). Per team, per region/segment: P8 orders, sold, price, unit cost, design appeal %, marketing $, capacity, unsold stock.\nR1 lowCost: Red ord 23 sold 23 $43 uc 28 eng 45% mkt $101 cap 0 stock 27; Blue ord 74 sold 74 $39 uc 26.9 eng 109% mkt $264 cap 85 stock 13; Yellow ord 48 sold 48 $36 uc 29.5 eng 24% mkt $226 cap 94 stock 80; Green ord 87 sold 83 $38 uc 24.6 eng 108% mkt $233 cap 134 stock 1; Purple ord 92 sold 83 $39 uc 27.7 eng 121% mkt $284 cap 155 stock 1\nR1 family: Red ord 50 sold 48 $60 uc 61.5 eng 64% mkt $644 cap 0 stock 0; Blue ord 105 sold 92 $58 uc 39.9 eng 99% mkt $1033 cap 111 stock 0; Yellow ord 33 sold 33 $62 uc 41.8 eng 85% mkt $322 cap 118 stock 54; Green ord 116 sold 116 $59 uc 34.5 eng 86% mkt $1137 cap 148 stock 2; Purple ord 90 sold 70 $60 uc 46.5 eng 57% mkt $1592 cap 0 stock 1\nR1 ecoFriendly: Red ord 111 sold 74 $62 uc 53.4 eng 112% mkt $724 cap 176 stock 1; Blue ord 0 sold 0 $60 uc 0 eng 0% mkt $0 cap 0 stock 13; Yellow ord 42 sold 40 $72 uc 49.8 eng 0% mkt $1083 cap 0 stock 1; Green ord 65 sold 24 $60 uc 68.9 eng 102% mkt $379 cap 0 stock 1; Purple ord 41 sold 41 $64 uc 37.9 eng 68% mkt $305 cap 110 stock 41\nR1 image: Red ord 91 sold 91 $137 uc 69.6 eng 159% mkt $1729 cap 106 stock 12; Blue ord 114 sold 104 $150 uc 75.4 eng 222% mkt $2132 cap 159 stock 1; Yellow ord 104 sold 72 $135 uc 75.1 eng 201% mkt $1901 cap 90 stock 0; Green ord 63 sold 63 $143 uc 79.9 eng 212% mkt $1312 cap 105 stock 13; Purple ord 79 sold 64 $140 uc 78.8 eng 222% mkt $1702 cap 75 stock 1\nR2 lowCost: Red ord 49 sold 49 $34 uc 21.4 eng 45% mkt $126 cap 0 stock 114; Blue ord 280 sold 156 $33 uc 21.9 eng 109% mkt $840 cap 231 stock 1; Yellow ord 78 sold 78 $34 uc 19.3 eng 24% mkt $294 cap 234 stock 127; Green ord 173 sold 163 $33 uc 22.7 eng 108% mkt $336 cap 279 stock 1; Purple ord 0 sold 0 $34 uc 0 eng 121% mkt $0 cap 227 stock 166\nR2 family: Red ord 78 sold 78 $58 uc 35.2 eng 64% mkt $944 cap 221 stock 2; Blue ord 50 sold 50 $59 uc 42.6 eng 99% mkt $486 cap 70 stock 12; Yellow ord 76 sold 76 $60 uc 36 eng 85% mkt $966 cap 77 stock 6; Green ord 66 sold 66 $59 uc 37.1 eng 86% mkt $716 cap 104 stock 11; Purple ord 64 sold 62 $60 uc 38.8 eng 57% mkt $966 cap 0 stock 0\nR2 image: Red ord 0 sold 0 $0 uc 0 eng 159% mkt $0 cap 0 stock 0; Blue ord 0 sold 0 $150 uc 0 eng 222% mkt $828 cap 0 stock 1; Yellow ord 0 sold 0 $130 uc 0 eng 201% mkt $1521 cap 0 stock 0; Green ord 0 sold 0 $140 uc 0 eng 212% mkt $1484 cap 43 stock 0; Purple ord 0 sold 0 $140 uc 0 eng 222% mkt $1865 cap 0 stock 0\nFinance after P8: Red total profit -1290, P8 profit -3153, cash 36564, debt 19020, R1 debt/equity 35%; Blue total profit -770, P8 profit 270, cash 35664, debt 20478, R1 debt/equity 37%; Yellow total profit -3405, P8 profit -2567, cash 39044, debt 20740, R1 debt/equity 39%; Green total profit -750, P8 profit -1798, cash 32356, debt 21224, R1 debt/equity 39%; Purple total profit -16585, P8 profit -6906, cash 33500, debt 27294, R1 debt/equity 92%\nP9 forecast (buyers vs all cars): Eco-Friendly \u00b7 Region 1 ~265 buyers vs 330 cars; Family \u00b7 Region 2 ~355 buyers vs 501 cars; Image \u00b7 Region 1 ~460 buyers vs 541 cars; Family \u00b7 Region 1 ~375 buyers vs 494 cars; Low Cost \u00b7 Region 1 ~340 buyers vs 590 cars; Low Cost \u00b7 Region 2 ~620 buyers vs 1380 cars\nRed P9 plan: Eco $69 build 163 facility $3,043 (210 for P10), mktg 3/4/4/5; Image $137 build 80 (+11 stock), Novelty 7->8, facility $1,006; R2 Family $56 build 175 (60 exported to R1), Family eng Comfort 7, Robustness 7, Size 8, Consumption 6, R2 proximity 8; R1 Family imports 60 at $59, proximity 5; Low Cost cars: R1 27 at $37, R2 113 at $28, sliders 2/1/5/10/8/2/7/3/2 (free, no plant), R2 LC mktg 4/2/2/1. Red will NOT enter Region 2 Eco or Image (it needs a new facility investment); R1 HR $1,483, repay $4,000 R1 loan; R2 HR $597. Indices: gas 2.4, production cost R1 1.12 / R2 0.82, business 1.11/1.12. CO2 rank Red #1 R1, #5 R2.";
 const TEAMS=['Red','Blue','Yellow','Green','Purple'];
 const TC={Red:'var(--t-red)',Blue:'var(--t-blue)',Yellow:'var(--t-yellow)',Green:'var(--t-green)',Purple:'var(--t-purple)'};
 const CO={
@@ -1214,7 +1214,7 @@ p8Render();
 // \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 P9 Decision Day \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 // Slider positions read from the P9 MEGA screens (now) and the white market-average line (mkt).
 const P9ENG={
-  lc: {now:[2,3,3,6,4,2,4,2,1],rec:[2,1,4,9,7,2,6,3,2],mkt:[2,4.4,3.4,8.3,5.6,2.4,5.4,3.4,1]},
+  lc: {now:[2,3,3,6,4,2,4,2,1],rec:[2,1,5,10,8,2,7,3,2],mkt:[2,4.4,3.4,8.3,5.6,2.4,5.4,3.4,1]},
   fam:{now:[5,4,6,5,7,5,4,4,3],rec:[5,4,7,7,8,5,6,4,3],mkt:[5.2,4.4,7,6,7.4,5.6,5.8,4.2,3.4]},
   eco:{now:[4,3,4,3,3,9,10,3,7],rec:[4,3,4,3,3,9,10,3,7],mkt:[2.4,2.2,2.6,2.4,1.6,4,5.4,1.6,4]},
   img:{now:[8,7,6,5,4,8,5,6,7],rec:[8,7,6,5,4,8,5,6,8],mkt:[8.4,7.6,6.4,5.2,3.4,9,3.4,6.4,8.4]}};
@@ -1223,7 +1223,7 @@ const P9MKT={
   r1fam:{now:[4,3,3,2],rec:[5,3,3,2],mkt:[5.8,3,3.2,2.6]},
   eco:  {now:[3,3,3,5],rec:[3,4,4,5],mkt:[2.8,3.7,3.5,4]},
   img:  {now:[2,7,7,9],rec:[2,7,7,9],mkt:[2.8,6,5,8.6]},
-  r2lc: {now:[1,1,1,1],rec:[3,2,2,1],mkt:[2.7,1.7,1.7,1.2]},
+  r2lc: {now:[1,1,1,1],rec:[4,2,2,1],mkt:[2.7,1.7,1.7,1.2]},
   r2fam:{now:[7,4,5,4],rec:[8,4,5,4],mkt:[6,4.8,4.2,3.8]}};
 
 function renderDecision(){
@@ -1237,7 +1237,7 @@ function renderDecision(){
     ['Own Eco (R1)','Hold our design lead (112% vs Purple 68%). Price $62 \u2192 $69. Build all 163. Plant grows to 210 for P10.'],
     ['Fill Family (R2)','Buyers grew 13% and rivals have only ~280 cars. Build 175: 115 for Region 2, 60 shipped to Region 1. Price $56.'],
     ['Defend Image (R1)','Novelty 7 \u2192 8 to match the market. Hold $137. Build 80 plus 11 in stock: the market is getting crowded.'],
-    ['Clear Low Cost','Both markets are flooded, so price to move: $37 in R1, $29 in R2. Sliders and dealer marketing back up. Build 0.']]
+    ['Clear Low Cost','Both markets are flooded, so price to move: $37 in R1, $28 in R2. Sliders above the market and dealer marketing up. Build 0.']]
     .map(([h,t])=>`<div class="tile"><span class="label">${h}</span><span class="note" style="color:var(--fg);font-size:15px">${t}</span></div>`).join('');
 
   $('#dd-p8').innerHTML=[
@@ -1258,7 +1258,10 @@ function renderDecision(){
 
   const cards=[
    {id:'r1lc',t:'Region 1 \u00b7 Low Cost',tag:['warn','Sell out'],body:`
-     <li class="sub">Engineering sliders (shared, $0 cost with no plant)</li>${eng('lc')}
+     ${kv('First, on the Corporate page','Low Cost capacity should show 0. If it still shows a plant, turn Sell Plant ON.')}
+     <li class="sub">Engineering sliders (shared by both regions; $0 cost because we build nothing)</li>${eng('lc')}
+     ${kv('Appeal check','MEGA\'s Low Cost engineering appeal must go UP (P8: 45%, P7: 84%). If one move lowers it, put that slider back one step.')}
+     ${kv('Never 0','A zero slider makes the leftover cars unsellable')}
      <li class="sub">Marketing sliders</li>${mkt('r1lc')}
      ${kv('Plant','<span class="pill good">Already sold in P8</span> (nothing left to sell)')}
      ${kv('Price','<span class="pill warn">$43 \u2192 $37</span> (market flooded)')}${kv('Production','0 (27 in stock)')}
@@ -1293,7 +1296,7 @@ function renderDecision(){
      ${kv('Engineering sliders','Shared with Region 1 (step 1)')}
      <li class="sub">Region 2 marketing sliders</li>${mkt('r2lc')}
      ${kv('Plant','<span class="pill good">Already sold in P8</span> (nothing left to sell)')}
-     ${kv('Price','<span class="pill warn">$34 \u2192 $29</span> (2 cars per buyer)')}${kv('Production','0 (113 in stock)')}
+     ${kv('Price','<span class="pill warn">$34 \u2192 $28</span> (2 cars per buyer)')}${kv('Production','0 (113 in stock)')}
      ${kv('Facility investment','$0')}`},
    {id:'r2fam',t:'Region 2 \u00b7 Family',tag:['good','Fill the plant'],body:`
      ${kv('Engineering sliders','Shared with Region 1 Family (step 2)')}
@@ -1306,7 +1309,7 @@ function renderDecision(){
      ${kv('HR & Quality','$597 (keep)')}
      ${kv('New loans','$0')}
      ${kv('Dividend','$0 (retained earnings are negative)')}
-     ${kv('Cash available after all of this','about $2.5k (must be $0 or more)')}
+     ${kv('Cash available after all of this','about $2.3k (must be $0 or more)')}
      ${kv('Check','Capacity Next Period still about 221')}`}];
   let ticks={}; try{ticks=JSON.parse(localStorage.getItem('p9ticks')||'{}')}catch(e){}
   $('#dd-steps').innerHTML=cards.map((c,i)=>`<article class="card dd-card${ticks[c.id]?' done':''}" id="dd-${c.id}">
@@ -1325,7 +1328,7 @@ function renderDecision(){
     ['Family (R2)','~115 sold','32% share, plus 60 shipped to R1'],
     ['Low Cost','141 \u2192 ~0','Stuck cars cleared'],
     ['Region 1 debt','$8.3k','Down from $12.3k'],
-    ['Cash left','R1 ~$1.1k \u00b7 R2 ~$2.5k','Both at $0 or more'],
+    ['Cash left','R1 ~$1.1k \u00b7 R2 ~$2.3k','Both at $0 or more'],
     ['Total profit rank','#3 \u2192 #1?','We are $540 behind Green']]
     .map(([l,v,n])=>`<div class="tile"><span class="label">${l}</span><span class="v" style="font-size:26px">${v}</span><span class="note">${n}</span></div>`).join('');
 }
@@ -1368,7 +1371,7 @@ const LOG=[
   bad:['Eco plant ran at 17%, losing 37 sales.','Low Cost sliders and marketing were cut while we still had cars to sell.','Family slider increases weren\'t entered, and Region 2 Family facility was $6,000 (plan: $552).'],
   lesson:'Keep supporting a line until its last car is sold. When we lead a market, build to full capacity.'},
  {p:'P9',title:'Own Eco, fill Family',status:['plain','Planned'],
-  did:'Eco $69, build all 163, plant to 210. Region 2 Family: 175 built, 60 shipped to Region 1, Consumption 4 \u2192 6. Image Novelty 7 \u2192 8, $137, build 80. Low Cost sliders restored to sell 141 cars at $37 and $29. Repay $4,000 of debt.',
+  did:'Eco $69, build all 163, plant to 210. Region 2 Family: 175 built, 60 shipped to Region 1, Consumption 4 \u2192 6. Image Novelty 7 \u2192 8, $137, build 80. Low Cost sliders raised above the market (free with no plant) to sell 141 cars at $37 and $28. Repay $4,000 of debt.',
   why:'Only Purple is left in Eco. Region 2 Family buyers beat rivals\' cars and our plant is 2\u00d7 any rival. Image and Low Cost are crowded. High gas prices reward fuel economy.',
   happened:'Waiting for results.',
   good:[],bad:[],

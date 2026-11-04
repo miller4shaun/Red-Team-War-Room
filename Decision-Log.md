@@ -91,7 +91,8 @@ This is our running tab: one entry per period covering what we decided and why, 
   - Region 2 Family: build 175 (115 for Region 2, 60 shipped to Region 1). Consumption 4 → 6, Dealer Proximity 7 → 8, price $56.
   - Region 1 Family: sell the 60 imported cars at $59.
   - Image: Novelty 7 → 8, hold $137, build 80, no new capacity.
-  - Low Cost (both plants already sold in P8): sell the 141 leftover cars at $37 (Region 1) and $29 (Region 2), with sliders and dealer marketing back up.
+  - Low Cost (both plants already sold in P8): sell the 141 leftover cars at $37 (Region 1) and $28 (Region 2). Engineering sliders go above the market, which is free with no plant. Dealer marketing goes up (Region 2 proximity 4).
+  - Not entering Region 2 Eco or Image: that needs a new facility investment, and our cash goes to our two lead markets.
   - Repay $4,000 of Region 1 debt.
 - **Why:**
   - Eco buyers are flat at about 265, and only Purple is left. Buyers chose us 111 to 41 over Purple in P8.
