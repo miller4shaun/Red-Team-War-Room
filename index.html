@@ -1304,12 +1304,12 @@ function renderDecision(){
      ${kv('Price','$58 \u2192 $56')}${kv('Production','<span class="pill good">115</span> (all sold here)')}
      ${kv('Exported to Region 1','<span class="pill good">0</span> (no transfers)')}
      ${kv('Market size \u00b7 share','355 \u00b7 32%')}
-     ${kv('Facility investment','<span class="pill bad">$552 \u2192 $0</span>')}`},
+     ${kv('Facility investment','<span class="pill good">$552</span> (keeps the plant near 221)')}`},
    {id:'r2corp',t:'Region 2 \u00b7 Corporate',tag:['plain','Cash'],body:`
      ${kv('HR & Quality','$597 (keep)')}
      ${kv('New loans','$0')}
      ${kv('Dividend','$0 (retained earnings are negative)')}
-     ${kv('Cash available after all of this','about $2.0k (must be $0 or more)')}
+     ${kv('Cash available after all of this','about $1.5k (must be $0 or more)')}
      ${kv('Check','Capacity Next Period still about 221')}`}];
   let ticks={}; try{ticks=JSON.parse(localStorage.getItem('p9ticks')||'{}')}catch(e){}
   $('#dd-steps').innerHTML=cards.map((c,i)=>`<article class="card dd-card${ticks[c.id]?' done':''}" id="dd-${c.id}">
@@ -1328,7 +1328,7 @@ function renderDecision(){
     ['Family (R2)','~115 sold','32% share, no exports'],
     ['Low Cost','141 \u2192 ~0','Stuck cars cleared'],
     ['Region 1 debt','$8.3k','Down from $12.3k'],
-    ['Cash left','R1 ~$0.7k \u00b7 R2 ~$2.0k','Both at $0 or more'],
+    ['Cash left','R1 ~$0.7k \u00b7 R2 ~$1.5k','Both at $0 or more'],
     ['Total profit rank','#3 \u2192 #1?','We are $540 behind Green']]
     .map(([l,v,n])=>`<div class="tile"><span class="label">${l}</span><span class="v" style="font-size:26px">${v}</span><span class="note">${n}</span></div>`).join('');
 }
@@ -1371,7 +1371,7 @@ const LOG=[
   bad:['Eco plant ran at 17%, losing 37 sales.','Low Cost sliders and marketing were cut while we still had cars to sell.','Family slider increases weren\'t entered, and Region 2 Family facility was $6,000 (plan: $552).'],
   lesson:'Keep supporting a line until its last car is sold. When we lead a market, build to full capacity.'},
  {p:'P9',title:'Own Eco, fill Family',status:['plain','Planned'],
-  did:'Eco $69, build all 163, plant to 210. Region 2 Family: 115 built, no cars shipped to Region 1, Region 1 Family marketing 0, Consumption 4 \u2192 6. Image Novelty 7 \u2192 8, $137, build 80. Low Cost sliders raised above the market (free with no plant) to sell 141 cars at $37 and $28. Repay $4,000 of debt.',
+  did:'Eco $69, build all 163, plant to 210. Region 2 Family: 115 built, facility investment $552, no cars shipped to Region 1, Region 1 Family marketing 0, Consumption 4 \u2192 6. Image Novelty 7 \u2192 8, $137, build 80. Low Cost sliders raised above the market (free with no plant) to sell 141 cars at $37 and $28. Repay $4,000 of debt.',
   why:'Only Purple is left in Eco. Region 2 Family buyers beat rivals\' cars and our plant is 2\u00d7 any rival. Image and Low Cost are crowded. High gas prices reward fuel economy.',
   happened:'Waiting for results.',
   good:[],bad:[],

@@ -89,6 +89,7 @@ This is our running tab: one entry per period covering what we decided and why, 
 - **Did (plan):**
   - Eco at $69, build all 163, plant to 210.
   - Region 2 Family: build 115, all sold in Region 2. Consumption 4 → 6, Dealer Proximity 7 → 8, price $56.
+  - Region 2 Family facility investment $552 (our call: keeps the plant near 221; the plant is only about 56% used, so we expect no benefit this period).
   - Region 1 Family: out of the market. No transfer of cars from Region 2 (our decision), marketing set to 0.
   - Image: Novelty 7 → 8, hold $137, build 80, no new capacity.
   - Low Cost (both plants already sold in P8): sell the 141 leftover cars at $37 (Region 1) and $28 (Region 2). Engineering sliders go above the market, which is free with no plant. Dealer marketing goes up (Region 2 proximity 4).
