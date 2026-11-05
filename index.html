@@ -1309,7 +1309,7 @@ function renderDecision(){
      ${kv('HR & Quality','$597 (keep)')}
      ${kv('New loans','$0')}
      ${kv('Dividend','$0 (retained earnings are negative)')}
-     ${kv('Cash available after all of this','about $2.3k (must be $0 or more)')}
+     ${kv('Cash available after all of this','about $2.0k (must be $0 or more)')}
      ${kv('Check','Capacity Next Period still about 221')}`}];
   let ticks={}; try{ticks=JSON.parse(localStorage.getItem('p9ticks')||'{}')}catch(e){}
   $('#dd-steps').innerHTML=cards.map((c,i)=>`<article class="card dd-card${ticks[c.id]?' done':''}" id="dd-${c.id}">
