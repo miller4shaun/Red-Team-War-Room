@@ -1,3 +1,4 @@
+<!-- updated with P9 results, Nov 11 -->
 <meta charset="utf-8">
 <title>Universe 2 War Room</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1370,20 +1371,27 @@ const LOG=[
   good:['Image: 91 of 91 sold, +$1,764.','Region 2 Family sold 78, the most in Region 2.','Rivals left Eco, so we read the market right.'],
   bad:['Eco plant ran at 17%, losing 37 sales.','Low Cost sliders and marketing were cut while we still had cars to sell.','Family slider increases weren\'t entered, and Region 2 Family facility was $6,000 (plan: $552).'],
   lesson:'Keep supporting a line until its last car is sold. When we lead a market, build to full capacity.'},
- {p:'P9',title:'Own Eco, fill Family',status:['plain','Planned'],
+ {p:'P9',title:'Own Eco, fill Family',status:['warn','Mixed'],
   did:'Eco $69, build all 163, plant to 210. Region 2 Family: 115 built, facility investment $552, no cars shipped to Region 1, Region 1 Family marketing 0, Consumption 4 \u2192 6. Image Novelty 7 \u2192 8, $137, build 80. Low Cost sliders raised above the market (free with no plant) to sell 141 cars at $37 and $28. Repay $4,000 of debt.',
   why:'Only Purple is left in Eco. Region 2 Family buyers beat rivals\' cars and our plant is 2\u00d7 any rival. Image and Low Cost are crowded. High gas prices reward fuel economy.',
-  happened:'Waiting for results.',
+  happened:'Net profit R1 +$2,181 and R2 −$1,656 (total +$525, against about +$5.6k EBIT expected). #2 on P9 profit and #2 cumulative (Blue +$4,282, us −$765). Eco 104 sold at $69 (+$1,260) with 60 cars left over. Image 91 sold at $137 (+$1,105); Blue sold 127 at $150 (+$3,790). Region 2 Family sold 117, the most, but lost $1,166: marketing $1,671 vs $1,727 gross profit. Region 2 Low Cost had 352 orders and sold 113 (no plant), −$356. Blue\'s Region 2 Low Cost plant earned +$1,508. Region 2 HR & Quality jumped $597 → $1,600, not in the plan.',
+  good:['Eco is our best line and we own the market.','Region 2 Family sold out and led the region on volume.','Region 2 Low Cost stock cleared, Region 1 swung back to profit, $4,000 of debt repaid.'],
+  bad:['Region 2 Family marketing ate the whole margin (Blue spent $929 to sell 75).','Selling the Low Cost plants in P8 gave up Blue\'s most profitable non-Image line.','Eco overbuilt by 60 cars. Region 2 HR jump was unplanned.','Rival calls: Blue Image toward $145 right (went to $150), Green opening Region 2 Image right, Yellow dumping cars wrong (still 145 Family cars in Region 1).'],
+  lesson:'Winning on volume isn\'t winning on profit. Region 2 Family led the region but lost money because marketing outgrew the margin. Build to buyers, not to capacity. Check HR and marketing sliders against the plan.'},
+ {p:'P10–P11',title:'Plan to catch Blue',status:['plain','Planned'],
+  did:'Win on every line except Image. Eco: build fewer cars (60 left over) and raise marketing. Region 2 Family: keep the line, cut marketing toward Blue\'s level (plant is only about 52% used, so more capacity won\'t add sales). Region 2 Low Cost: consider rebuilding capacity if payback works in two periods.',
+  why:'Blue is about $5k ahead and earns about $5.7k EBIT a period, two-thirds from Image. A recession that hits premium cars would help us. Blue earns about $2.4k a period outside Image; we lost about $0.3k.',
+  happened:'Not yet played. Open: leaderboard metric, plant cost and payback, recession size and timing (professor has not said).',
   good:[],bad:[],
-  lesson:'Fill this in after the P9 results.'}];
+  lesson:'Fill this in after the P10 results.'}];
 const LOGTHEMES=[
   ['ok','What has been working','Image as the profit engine: premium price, sold out P6\u2013P8. HR & Quality spending cut failure rates. Spotting where rivals leave (Eco, Region 2 Family) before they do.'],
   ['no','What has not been working','Running out of cars when buyers are there (P5, P6, P8). Plants we don\'t fill (Family 19% in P7, Eco 17% in P8). Cutting sliders or marketing on lines that still have cars.'],
   ['no','Our biggest repeat mistake','MEGA entries not matching the plan: Family proximity (P7), Image models (P7), Family sliders and Region 2 facility (P8). That is why we now use the screen-by-screen checklist.'],
-  ['ok','Strategy story','P4\u2013P6: learn the market. P7: take on Region 2. P8: exit crowded markets. P9 on: lead Eco and Region 2 Family.']];
+  ['ok','Strategy story','P4\u2013P6: learn the market. P7: take on Region 2. P8: exit crowded markets. P9: lead Eco and Region 2 Family (profit +$525, #2). P10–P11: win every line except Image to catch Blue.']];
 function renderLog(){
   $('#log-themes').innerHTML=LOGTHEMES.map(([c,h,t])=>`<div class="predict"><span class="label" style="color:var(--${c==='ok'?'good':'bad'})">${h}</span><p>${t}</p></div>`).join('');
-  const T=[['','P4','P5','P6','P7','P8'],['R1 net profit','\u2212302','\u2212506','+394','+1,029','\u22122,394'],['R2 net profit','','+463','+450','+335','\u2212759'],['Image cars sold','60','67','85','85','91'],['Eco cars sold','40','51','56','48','74']];
+  const T=[['','P4','P5','P6','P7','P8','P9'],['R1 net profit','\u2212302','\u2212506','+394','+1,029','\u22122,394','+2,181'],['R2 net profit','','+463','+450','+335','\u2212759','\u22121,656'],['Image cars sold','60','67','85','85','91','91'],['Eco cars sold','40','51','56','48','74','104']];
   $('#log-trend').innerHTML=T.map((r,i)=>`<tr>${r.map(c=>i?`<td>${c}</td>`:`<th>${c}</th>`).join('')}</tr>`).join('');
   const li=(a,c,ic)=>a.map(x=>`<li class="${c}"><b class="ic">${ic}</b><span>${x}</span></li>`).join('');
   $('#log-cards').innerHTML=LOG.slice().reverse().map(e=>`<article class="card">
