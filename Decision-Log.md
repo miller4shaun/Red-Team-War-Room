@@ -19,11 +19,11 @@ This is our running tab: one entry per period covering what we decided and why, 
 
 | | P4 | P5 | P6 | P7 | P8 | P9 |
 |---|---|---|---|---|---|---|
-| Region 1 net profit | −302 | −506 | +394 | +1,029 | −2,394 | |
-| Region 2 net profit | | +463 | +450 | +335 | −759 | |
-| Image cars sold | 60 | 67 | 85 | 85 | 91 | |
-| Eco cars sold | 40 | 51 | 56 | 48 | 74 | |
-| Red profit rank (period) | tie | | | #2 | #4 | |
+| Region 1 net profit | −302 | −506 | +394 | +1,029 | −2,394 | +2,181 |
+| Region 2 net profit | | +463 | +450 | +335 | −759 | −1,656 |
+| Image cars sold | 60 | 67 | 85 | 85 | 91 | 91 |
+| Eco cars sold | 40 | 51 | 56 | 48 | 74 | 104 |
+| Red profit rank (period) | tie | | | #2 | #4 | #2 |
 
 ---
 
@@ -106,5 +106,43 @@ This is our running tab: one entry per period covering what we decided and why, 
   - Yellow: dumps stuck cars.
   - Purple: Eco price cuts, and may sell plants.
 - **Expected:** EBIT about +$5.1k (Region 1) and +$0.5k (Region 2), after dropping the 60-car transfer. Eco sells out, Low Cost is cleared, and we move from #3 toward #1 on total profit ($540 behind Green).
-- **What happened:** *(fill in after P9 results; score the rival predictions too)*
-- **Lesson:** *(fill in)*
+- **What happened:**
+  - Net profit Region 1 +$2,181 and Region 2 −$1,656 (total +$525, against about +$5.6k EBIT expected). #2 on P9 profit and #2 on cumulative P4–P9 (+$4,282 for Blue, −$765 for us). Blue is about $5k ahead.
+  - Eco: 104 sold at $69, EBIT +$1,260, but **60 cars left unsold** (plan assumed a full sell-out).
+  - Image: 91 sold at $137, EBIT +$1,105. Blue sold 127 at $150 and earned +$3,790 in Region 1.
+  - Region 2 Family: 117 sold at $56, the most in Region 2, but EBIT −$1,166. Marketing was $1,671 against $1,727 gross profit. Blue spent $929 to sell 75.
+  - Region 2 Low Cost: 352 orders, only 113 sold (239 lost, no plant), EBIT −$356. Blue's Region 2 Low Cost plant ran at 95% use and earned +$1,508 at a $18.6 unit cost.
+  - Region 2 HR & Quality jumped from $597 to $1,600, which was not in the plan.
+  - Debt: repaid $4,000 of Region 1 debt as planned.
+- ✓ Eco is our best line and we own the market.
+- ✓ Region 2 Family sold out and led the region on volume.
+- ✓ Region 2 Low Cost stock was cleared, and Region 1 swung back to a profit.
+- ✕ Region 2 Family marketing ate the whole margin.
+- ✕ Selling the Low Cost plants in P8 gave up Blue's most profitable non-Image line.
+- ✕ Eco overbuilt by 60 cars, and the Region 2 HR jump was unplanned.
+- **Rivals scored:** Blue Image toward $145: right direction, Blue went to $150 ✓. Green opens Region 2 Image: Green had 107 Image orders in Region 2 ✓ (Family growth not checked). Yellow dumps stuck cars: Yellow still had 145 Family cars in Region 1 ✕. Purple Eco price cuts: not checked.
+- **Lesson:** Winning on volume isn't winning on profit. Region 2 Family led the region but lost money because marketing outgrew the margin. Build to buyers, not to capacity: Eco's plant was full but the buyers weren't there. Check HR and marketing sliders against the plan, as in P7 and P8.
+
+## P10 and P11: Plan to catch Blue (recession expected, size and timing unknown)
+- **Goal:** Win on every line except Image and move past Blue on the overall leaderboard. We don't yet know the leaderboard metric.
+- **Gap:** Blue is about $5k ahead on cumulative profit and earns about +$5.7k EBIT a period. Blue's Image is about two-thirds of that, so a recession that hits premium cars would help us.
+- **Ideas agreed so far:**
+  - **Eco:** Build fewer cars (60 are left over) and put more into marketing.
+  - **Region 2 Family:** Keep the line and cut marketing toward Blue's level. Capacity isn't the limit (plant about 52% used), so more plant won't add sales.
+  - **Region 2 Low Cost:** Consider rebuilding capacity if the payback works in two periods.
+- **Open:** Leaderboard metric, plant cost and payback, and the recession's size and timing.
+
+## P10 results (filled in from the dashboard on Nov 19; our P10 entries are not recorded here, add them)
+- **What happened:**
+  - Net profit Region 1 +$1,578 and Region 2 −$3,279, combined −$1,701 (#4 of 5 for P10). Cumulative P4–P10 is −$2,466, #3 (Blue +$9,375, Green +$978).
+  - Eco: 124 sold at $72 (every order filled), but EBIT only +$17. Unit cost jumped to $39.0 because the expanded plant ran at 38%.
+  - Image: 100 sold at $145 against 115 orders (15 lost, plant 97.7% used), EBIT +$1,756.
+  - Region 2 Family: 115 sold against 158 orders (43 lost, about $2,500), at $58. Unit cost $44.5 with the plant at 52%. EBIT −$3,145, of which HR was −$2,500.
+  - HR & Quality was $2,500 in each region ($5,000 total). Blue spent $1,350 in total and earned +$5,093.
+  - Region 2 debt rose from $6,700 to $9,146.
+- ✓ Eco and Image still filled every order they had cars for, and Red is #1 or #2 on CO2 in every line.
+- ✕ Built too few Family cars for the orders we had.
+- ✕ Plant expansion (Eco 210) sat mostly empty, so unit cost went up.
+- ✕ HR & Quality at $5,000 turned a small profit into a loss.
+- **Six winning criteria (from the course pre-reading):** Sales Revenue, ROCE, ARE, Employee Morale, Share Value, CO2. Red at P10: revenue #3, ROCE −3.9% (#4), ARE −$14,840 (#3), CO2 near the top. Morale and share price are not in the dashboard.
+- **Lesson:** Fixed costs punish unused capacity, and spending that pays back later (plants, HR) is worth nothing in the final period.
