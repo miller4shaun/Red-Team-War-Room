@@ -1,0 +1,169 @@
+<title>Red Team Final Decision</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap">
+<style>
+/* Layout: one narrow column, one card per MEGA screen in the order you open them. */
+:root{
+  --bg:#f6f4f4; --surface:#ffffff; --fg:#1d1a1b; --muted:#6b6264; --line:#e4dddf;
+  --accent:#c4202f; --accent-soft:#fbe9eb; --good:#1f7a4a; --warn:#9a5b00;
+  --head:'Space Grotesk','Inter',system-ui,sans-serif; --body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141012; --surface:#1f191b; --fg:#f1eaec; --muted:#a79ca0; --line:#342b2e;
+    --accent:#ff6b78; --accent-soft:#3a1c21; --good:#5fd195; --warn:#f0b35a; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141012; --surface:#1f191b; --fg:#f1eaec; --muted:#a79ca0; --line:#342b2e;
+  --accent:#ff6b78; --accent-soft:#3a1c21; --good:#5fd195; --warn:#f0b35a; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5;
+  padding-block:24px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+h1,h2{font-family:var(--head);text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:1.9rem}
+h2{font-size:1.15rem}
+p{margin:0}
+.lead{color:var(--muted)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:10px 0;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}
+.meter{flex:1;height:8px;border-radius:4px;background:var(--line);overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s}
+.count{font-variant-numeric:tabular-nums;font-weight:600;min-width:5.5ch;text-align:right}
+.region{font-family:var(--head);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card header{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline;justify-content:space-between}
+.tag{font-size:.78rem;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.tag.ok{background:transparent;border:1px solid var(--line);color:var(--muted)}
+ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+label{display:flex;gap:12px;align-items:flex-start;padding:10px 4px;border-top:1px solid var(--line);cursor:pointer;min-width:0}
+li:first-child label{border-top:0}
+input[type=checkbox]{width:22px;height:22px;margin:1px 0 0;accent-color:var(--accent);flex:none}
+input[type=checkbox]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.what{flex:1;min-width:0}
+.what b{font-weight:600}
+.val{font-family:var(--head);font-size:1.1rem;font-weight:700;color:var(--accent)}
+.was{color:var(--muted);font-size:.9rem}
+.why{color:var(--muted);font-size:.88rem;display:block}
+input:checked + .what{opacity:.5}
+input:checked + .what .val{text-decoration:line-through}
+.note{border-left:3px solid var(--warn);padding:2px 0 2px 12px;color:var(--fg)}
+.check{border-color:var(--accent)}
+.dont li{padding:6px 0;border-top:1px solid var(--line)}
+.dont li:first-child{border-top:0}
+.small{font-size:.88rem;color:var(--muted)}
+button{font:inherit;background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer;align-self:flex-start}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.meter i{transition:none}}
+</style>
+
+<main>
+  <div>
+    <h1>Period 11: the last decision</h1>
+    <p class="lead" style="margin-top:8px">Go through the screens in this order. Tick each line after you change it in MEGA. Anything not listed, leave exactly as it is.</p>
+  </div>
+
+  <div class="bar"><div class="meter"><i id="fill"></i></div><div class="count" id="count">0 of 0</div></div>
+
+  <div class="region">Region 1</div>
+
+  <section class="card">
+    <header><h2>Low Cost and Family tabs</h2><span class="tag ok">Nothing to change</span></header>
+    <p class="small">We have no cars to sell in either one. Skip them.</p>
+  </section>
+
+  <section class="card">
+    <header><h2>Eco-Friendly tab</h2><span class="tag">Budget view</span></header>
+    <ul>
+      <li><label><input type="checkbox" id="c1"><span class="what"><b>Total market size</b> &rarr; <span class="val">262</span><span class="why">Last period's market. It shows 0 now.</span></span></label></li>
+      <li><label><input type="checkbox" id="c2"><span class="what"><b>Market share</b> &rarr; <span class="val">48%</span><span class="why">What we got last period.</span></span></label></li>
+      <li><label><input type="checkbox" id="c3"><span class="what"><b>Sales (volume)</b> &rarr; <span class="val">125</span> <span class="was">(now 183)</span><span class="why">183 would overstate the forecast. We sold 124 last period.</span></span></label></li>
+      <li><label><input type="checkbox" id="c4"><span class="what"><b>Price 72 and Production 167</b> &rarr; <span class="val">leave</span><span class="why">A full plant lowers the cost per car from $39 to $30.60.</span></span></label></li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <header><h2>Image tab</h2><span class="tag">Budget view</span></header>
+    <ul>
+      <li><label><input type="checkbox" id="c5"><span class="what"><b>Price</b> &rarr; <span class="val">150</span> <span class="was">(now 145)</span><span class="why">Orders were 115 against 94 cars, so we can charge more. Blue is at $150.</span></span></label></li>
+      <li><label><input type="checkbox" id="c6"><span class="what"><b>Total market size</b> &rarr; <span class="val">473</span></span></label></li>
+      <li><label><input type="checkbox" id="c7"><span class="what"><b>Market share</b> &rarr; <span class="val">20%</span><span class="why">94 cars out of 473.</span></span></label></li>
+      <li><label><input type="checkbox" id="c8"><span class="what"><b>Production 94 and Sales 94</b> &rarr; <span class="val">leave</span><span class="why">That is the full plant.</span></span></label></li>
+    </ul>
+  </section>
+
+  <section class="card check">
+    <header><h2>Corporate, Region 1</h2><span class="tag">Most important screen</span></header>
+    <ul>
+      <li><label><input type="checkbox" id="c9"><span class="what"><b>Facility investment, Eco</b> &rarr; <span class="val">0</span> <span class="was">(now 1,045)</span><span class="why">It only helps after the game ends.</span></span></label></li>
+      <li><label><input type="checkbox" id="c10"><span class="what"><b>Facility investment, Image</b> &rarr; <span class="val">0</span> <span class="was">(now 1,006)</span></span></label></li>
+      <li><label><input type="checkbox" id="c11"><span class="what"><b>Long-term loan: Repayment</b> &rarr; <span class="val">5,000</span> <span class="was">(now 0)</span><span class="why">Cash is not scored, so pay down debt and save the interest.</span></span></label></li>
+      <li><label><input type="checkbox" id="c12"><span class="what"><b>HR &amp; Quality</b> &rarr; <span class="val">2,500</span> <span class="was">(leave)</span><span class="why">Protects our #1 morale in Region 1.</span></span></label></li>
+      <li><label><input type="checkbox" id="c13"><span class="what"><b>All four Sell Plant switches</b> &rarr; <span class="val">off</span><span class="why">Dividend stays 0. It cannot be paid anyway.</span></span></label></li>
+      <li><label><input type="checkbox" id="c14"><span class="what"><b>Cash Available</b> &rarr; <span class="val">about 1,000</span><span class="why">Must be 0 or more. If it shows a negative number, lower the repayment.</span></span></label></li>
+    </ul>
+  </section>
+
+  <div class="region">Region 2</div>
+
+  <section class="card">
+    <header><h2>Family tab</h2><span class="tag">Budget view</span></header>
+    <ul>
+      <li><label><input type="checkbox" id="c15"><span class="what"><b>Price</b> &rarr; <span class="val">60</span> <span class="was">(now 58)</span><span class="why">We had 158 orders but can only build 142 cars.</span></span></label></li>
+      <li><label><input type="checkbox" id="c16"><span class="what"><b>Total market size</b> &rarr; <span class="val">268</span></span></label></li>
+      <li><label><input type="checkbox" id="c17"><span class="what"><b>Market share</b> &rarr; <span class="val">53%</span><span class="why">142 cars out of 268.</span></span></label></li>
+      <li><label><input type="checkbox" id="c18"><span class="what"><b>Production 142, Sales 142, Exported 0</b> &rarr; <span class="val">leave</span></span></label></li>
+    </ul>
+  </section>
+
+  <section class="card check">
+    <header><h2>Corporate, Region 2</h2><span class="tag">Most important screen</span></header>
+    <ul>
+      <li><label><input type="checkbox" id="c19"><span class="what"><b>Facility investment, Family</b> &rarr; <span class="val">0</span> <span class="was">(now 552)</span><span class="why">Same reason as Region 1.</span></span></label></li>
+      <li><label><input type="checkbox" id="c20"><span class="what"><b>HR &amp; Quality</b> &rarr; <span class="val">1,500</span> <span class="was">(now 2,500)</span><span class="why">Saves $1,000. Region 2 morale follows results more than HR spending.</span></span></label></li>
+      <li><label><input type="checkbox" id="c21"><span class="what"><b>Repayment 0, Dividend 0, new loan 0, Sell Plant off</b> &rarr; <span class="val">leave</span></span></label></li>
+      <li><label><input type="checkbox" id="c22"><span class="what"><b>Cash Available</b> &rarr; <span class="val">about 1,800</span><span class="why">Must be 0 or more.</span></span></label></li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Do not</h2>
+    <ul class="dont">
+      <li>Touch any engineering or marketing slider. The ones in MEGA now are right.</li>
+      <li>Sell a plant in either region.</li>
+      <li>Add a facility investment anywhere.</li>
+      <li>Take a new loan. It arrives next period.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>What we expect</h2>
+    <p>Region 1 EBIT about +$2.6k to +$3k and Region 2 about &minus;$0.3k. Revenue about $31k to $32k.</p>
+    <p class="small">Estimates from the MEGA forecast, not MEGA's own totals. The aim is to keep #1 on share value and morale in Region 1, hold CO2, and lift ROCE.</p>
+  </section>
+
+  <section class="card">
+    <h2>Before you submit</h2>
+    <p>Cash Available must be 0 or more on both Corporate pages. Take a screenshot of each and send them over for one last check.</p>
+    <button type="button" id="reset">Clear all ticks</button>
+  </section>
+</main>
+
+<script>
+(function(){
+  var boxes=[].slice.call(document.querySelectorAll('input[type=checkbox]'));
+  var KEY='red-p11-ticks';
+  function load(){try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){return {}}}
+  function save(){try{var o={};boxes.forEach(function(b){if(b.checked)o[b.id]=1});localStorage.setItem(KEY,JSON.stringify(o))}catch(e){}}
+  function paint(){
+    var n=boxes.filter(function(b){return b.checked}).length;
+    document.getElementById('count').textContent=n+' of '+boxes.length;
+    document.getElementById('fill').style.width=(boxes.length?n/boxes.length*100:0)+'%';
+  }
+  var saved=load();
+  boxes.forEach(function(b){b.checked=!!saved[b.id];b.addEventListener('change',function(){save();paint()})});
+  document.getElementById('reset').addEventListener('click',function(){boxes.forEach(function(b){b.checked=false});save();paint()});
+  paint();
+})();
+</script>
